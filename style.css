@@ -92,25 +92,30 @@ body {
 
 .carousel {
     overflow: hidden;
-    position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-inline: auto;
+	background-color: rgb(12, 48, 74);
+	position: relative;
 }
 
-.slider {
-    display: flex;
-    animation: carousel 3s linear infinite;
+.wrapper {
+	border: 5px solid black;
+	max-width: 1536px;
+	width: 90%;
+	position: relative;
+	margin-inline: auto;
 }
 
-.carousel img{
-    display: block;
-    object-fit: cover;
-    max-width: 100%;
-    min-width: 100%;
-    background-color: rgb(178, 240, 178);
+.wrapper img{
+	position: absolute;
+    max-width: 200px;
+    /* background-color: rgb(178, 240, 178); */
 }
 
 @keyframes carousel {
     to {
-        transform: translateX(-3065px);
+        left: -3840px;
     }
 }
 
