@@ -1,0 +1,24 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.header {
+    padding: 2%;
+    background-color: bisque;
+}
+
+.top-nav-bar {
+    padding: 1.5%;
+    background-color: orange;
+}
+
+.content {
+    padding: 90.5%;
+    background-color: lightblue;
+}
+
+footer {
+    padding: 6%;
+    background-color: pink;
+}
