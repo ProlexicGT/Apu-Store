@@ -35,6 +35,11 @@ body {
     width: 250px;
 }
 
+.header-right {
+    background-color: lightgray;
+    width: 100%;
+}
+
 .reglog {
     position: absolute;
     right: 0;
@@ -45,9 +50,13 @@ body {
     transform: translateY(-50%);
 }
 
-.header-right {
-    background-color: lightgray;
-    width: 100%;
+.reglog a {
+    margin: 10px;
+    padding: 10px;
+    border: solid 2px #000;
+    text-decoration: none;
+    color: black;
+    border-radius: 6px;
 }
 
 .top-nav-bar {
