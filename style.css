@@ -81,7 +81,7 @@ hr {
 }
 
 .top-nav-bar ul li {
-	margin-right: 15px;
+	margin-right: 25px;
 }
 
 .top-nav-bar a {
@@ -167,12 +167,15 @@ hr {
 
 footer {
 	height: auto;
-	padding: 10px;
+	padding: 20px;
 	margin-top: 0%;
-	background-color: pink;
+	/* background-color: pink; */
 }
 
 footer ul {
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
 	list-style: none;
 }
 
@@ -181,6 +184,7 @@ footer ul h3 {
 }
 
 footer ul li {
+	margin-top: 10px;
 	margin-left: 50px;
 	margin-bottom: 10px;
 }
@@ -189,3 +193,78 @@ footer ul li a {
 	text-decoration: none;
 	color: black;
 }
+
+.floating {
+	background-color: white;
+	height: 80%;
+	width: 75%;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+}
+
+.float-left {
+	background-color: lightcoral;
+	width: 65%;
+	height: 100%;
+}
+
+.float-right {
+	text-align: center;
+	width: 35%;
+	height: 100%;
+}
+
+.float-right h1 {
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.float-right form {
+	background-color: lightblue;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.float-right form div {
+	font-size: 20px;
+	margin-bottom: 5%;
+}
+
+.float-right form div a {
+	text-decoration: none;
+	color: black;
+	font-size: small;
+}
+
+.pass div {
+	justify-content: ;
+	background-color: lightgoldenrodyellow;
+}
+
+input[type=text], input[type=password], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
+
+  input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
