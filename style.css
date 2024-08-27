@@ -305,17 +305,19 @@ input[type=text], input[type=password], select {
 }
 
 .login-page-register-button {
-	width: 100%;
 	background-color: black;
 	color: white;
-	padding: 14px 132px;
-	border: none;
-	font-size: medium;
-	border-radius: 4px;
-	cursor: pointer;
-	transition: transform .4s;
+	text-align: center;
 	text-decoration: none;
-	cursor: pointer;
+	font-size: medium;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	outline-width: 0;
 }
 
 .login-page-register-button:hover {
@@ -339,4 +341,46 @@ input[type=text], input[type=password], select {
 
 .lastname {
 	margin-right: -9px;
+}
+
+.forget-pass-title {
+	text-wrap: nowrap;
+	left: 40%;
+	right: 40%;
+	margin-top: 3%;
+	position: absolute;
+}
+
+.enter-email-layout {
+	width: 90%;
+	left: 5%;
+	top: 40%;
+	position: absolute;
+}
+
+.enter-email-layout a {
+	text-decoration: none;
+	color: black;
+}
+
+.enter-email-layout div input[type=submit] {
+	width: 30%;
+	margin-top: 3%;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+
+.enter-email-layout div input[type=submit]:hover {
+	background-color: rgb(71, 71, 71);
+}
+
+.enter-email label {
+	font-size: larger;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.enter-email input {
+	width: 50%;
 }
