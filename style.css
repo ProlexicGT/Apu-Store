@@ -24,6 +24,16 @@ hr {
 	transform: translateY(-50%);
 }
 
+#abs-left {
+	position: absolute;
+	left: 0;
+}
+
+#abs-right {
+	position: absolute;
+	right: 0;
+}
+
 .header {
 	padding: 30px;
 	/* background-color: bisque; */
@@ -195,6 +205,8 @@ footer ul li a {
 }
 
 .floating {
+	border-radius: 5px;
+	box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.1);
 	background-color: white;
 	height: 80%;
 	width: 75%;
@@ -208,15 +220,19 @@ footer ul li a {
 }
 
 .float-left {
-	background-color: lightcoral;
+	border-radius: 5px 0px 0px 5px;
 	width: 65%;
 	height: 100%;
 }
 
 .float-right {
+	border-radius: 0px 5px 5px 0px;
+	background-color: rgba(211, 211, 211, 0.5);
+	opacity: 1;
 	text-align: center;
 	width: 35%;
 	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .float-right h1 {
@@ -225,7 +241,6 @@ footer ul li a {
 }
 
 .float-right form {
-	background-color: lightblue;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
@@ -237,15 +252,18 @@ footer ul li a {
 	margin-bottom: 5%;
 }
 
-.float-right form div a {
-	text-decoration: none;
-	color: black;
-	font-size: small;
+.pass {
+	padding-bottom: 10%;
 }
 
 .pass div {
-	justify-content: ;
-	background-color: lightgoldenrodyellow;
+	width: 100%;
+}
+
+.pass div a {
+	text-decoration: none;
+	color: black;
+	font-size: small;
 }
 
 input[type=text], input[type=password], select {
@@ -256,9 +274,10 @@ input[type=text], input[type=password], select {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
+	outline-width: 0;
   }
 
-  input[type=submit] {
+.submit {
 	width: 100%;
 	background-color: #4CAF50;
 	color: white;
@@ -267,4 +286,11 @@ input[type=text], input[type=password], select {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-  }
+	transition: transform .4s;
+	font-size: medium;
+}
+
+.submit:hover {
+	background-color: #56bd58;
+	transform: scale(1.05);
+}

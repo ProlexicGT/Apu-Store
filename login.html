@@ -6,30 +6,30 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: gray;">
+<body style="background-color: lightgray;">
     <div class="floating">
         <div class="float-left">
         
         </div>
-        <div class="float-right">
+        <div class="float-right" id="container">
             <h1>Login</h1>
-            <form>
+            <form method="post" action="#">
                 <div class="name">
                     <label for="name">Name: </label>
                     <br>
-                    <input type="text" id="name" placeholder="John Trabor" name="name">
+                    <input type="text" id="name" placeholder="Full Name" name="name">
                 </div>
-                <div class="pass">
+                <div class="pass" id="container">
                     <label for="pass">Password: </label>
                     <br>
                     <input type="password" id="pass" name="password" >
                     <div>
-                        <a href="" class="reg">Register</a>
-                        <a href="" class="forget">Forget Password</a>
+                        <a href="" id="abs-left">Register</a>
+                        <a href="" id="abs-right">Forget Password</a>
                     </div>
                 </div>
                 <div>
-                    <input type="submit">
+                    <input class="submit" type="submit">
                 </div>
             </form>
         </div>
