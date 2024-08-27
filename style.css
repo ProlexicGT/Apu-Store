@@ -24,6 +24,12 @@ hr {
 	transform: translateY(-50%);
 }
 
+#back-logo {
+	width: 18%;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
 #abs-left {
 	position: absolute;
 	left: 0;
@@ -240,6 +246,11 @@ footer ul li a {
 	margin-bottom: 10%;
 }
 
+#register-title {
+	margin-top: 7%;
+	margin-bottom: 7%;
+}
+
 .float-right form {
 	width: 80%;
 	margin-left: auto;
@@ -282,7 +293,6 @@ input[type=text], input[type=password], select {
 	background-color: #4CAF50;
 	color: white;
 	padding: 14px 20px;
-	margin: 8px 0;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
@@ -292,5 +302,41 @@ input[type=text], input[type=password], select {
 
 .submit:hover {
 	background-color: #56bd58;
-	transform: scale(1.05);
+}
+
+.login-page-register-button {
+	width: 100%;
+	background-color: black;
+	color: white;
+	padding: 14px 132px;
+	border: none;
+	font-size: medium;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: transform .4s;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.login-page-register-button:hover {
+	background-color: rgb(71, 71, 71);
+}
+
+.fname {
+	width: 100%;
+	display: flex;
+	position: relative;
+}
+
+.fname input {
+	width: 95%;
+	margin-bottom: -5%;
+}
+
+.firstname {
+	margin-right: -5px;
+}
+
+.lastname {
+	margin-right: -9px;
 }

@@ -9,27 +9,31 @@
 <body style="background-color: lightgray;">
     <div class="floating">
         <div class="float-left">
-        
+            <div id="abs-left">
+                <a href="index.html"><img src="/img/back_logo.png" alt="" id="back-logo"></a>
+            </div>
         </div>
         <div class="float-right" id="container">
             <h1>Login</h1>
             <form method="post" action="#">
-                <div class="name">
-                    <label for="name">Name: </label>
+                <div >
+                    <label for="username">Username: </label>
                     <br>
-                    <input type="text" id="name" placeholder="Full Name" name="name">
+                    <input type="text" id="username" placeholder="Username / Email" name="name">
                 </div>
                 <div class="pass" id="container">
                     <label for="pass">Password: </label>
                     <br>
                     <input type="password" id="pass" name="password" >
                     <div>
-                        <a href="" id="abs-left">Register</a>
                         <a href="" id="abs-right">Forget Password</a>
                     </div>
                 </div>
                 <div>
-                    <input class="submit" type="submit">
+                    <input class="submit" type="submit" value="Login">
+                </div>
+                <div>
+                    <a href="register.html" class="login-page-register-button">Register</a>
                 </div>
             </form>
         </div>
