@@ -8,8 +8,8 @@ hr {
 	border: none;
 	height: 1px;
 	/* Set the hr color */
-	color: #333;  /* old IE */
-	background-color: #333;  /* Modern Browsers */
+	color: #333; /* old IE */
+	background-color: #333; /* Modern Browsers */
 }
 
 #container {
@@ -43,7 +43,7 @@ hr {
 
 .header {
 	padding: 30px;
-	background-color: rgb(245,245,245);
+	background-color: rgb(245, 245, 245);
 	display: flex;
 	height: 100%;
 	align-content: center;
@@ -121,23 +121,17 @@ hr {
 	position: relative;
 	margin-inline: auto;
 	overflow: hidden;
-	mask-image: linear-gradient(
-		to right,
-		rgba(0,0,0,0),
-		rgba(0,0,0,1) 10%,
-		rgba(0,0,0,1) 90%,
-		rgba(0,0,0,0)
-	);
+	mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
 }
 
-.wrapper:hover img{
+.wrapper:hover img {
 	animation-play-state: paused;
 }
 
-.wrapper img{
+.wrapper img {
 	position: absolute;
-    max-width: 1536px;
-	left: calc(1100px*3);
+	max-width: 1536px;
+	left: calc(1100px * 3);
 	animation-name: carousel;
 	animation-duration: 30s;
 	animation-timing-function: linear;
@@ -149,28 +143,27 @@ hr {
 		left: -1536px;
 	}
 }
-.item1 {
-	animation-delay: calc(30s/3 * (3 - 1) * -1);
+.slide-image1 {
+	animation-delay: calc(30s / 3 * (3 - 1) * -1);
 	/* display: none; */
 }
 
-.item2 {
-	animation-delay: calc(30s/3 * (3 - 2) * -1);
+.slide-image2 {
+	animation-delay: calc(30s / 3 * (3 - 2) * -1);
 	/* display: none; */
 }
 
-.item3 {
-	animation-delay: calc(30s/3 * (3 - 3) * -1);
+.slide-image3 {
+	animation-delay: calc(30s / 3 * (3 - 3) * -1);
 	/* display: none; */
 }
-
 
 .content {
 	text-align: center;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 	padding: 10px;
 	min-height: 100vh;
-	background-color: rgb(245,245,245);
+	background-color: rgb(245, 245, 245);
 }
 
 .content p {
@@ -277,7 +270,9 @@ footer ul li a {
 	font-size: small;
 }
 
-input[type=text], input[type=password], select {
+input[type="text"],
+input[type="password"],
+select {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -286,17 +281,17 @@ input[type=text], input[type=password], select {
 	border-radius: 4px;
 	box-sizing: border-box;
 	outline-width: 0;
-  }
+}
 
 .submit {
 	width: 100%;
-	background-color: #4CAF50;
+	background-color: #4caf50;
 	color: white;
 	padding: 14px 20px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	transition: transform .4s;
+	transition: transform 0.4s;
 	font-size: medium;
 }
 
@@ -363,7 +358,7 @@ input[type=text], input[type=password], select {
 	color: black;
 }
 
-.enter-email-layout div input[type=submit] {
+.enter-email-layout div input[type="submit"] {
 	width: 30%;
 	margin-top: 3%;
 	border-radius: 10px;
@@ -372,7 +367,7 @@ input[type=text], input[type=password], select {
 	font-weight: bold;
 }
 
-.enter-email-layout div input[type=submit]:hover {
+.enter-email-layout div input[type="submit"]:hover {
 	background-color: rgb(71, 71, 71);
 }
 
@@ -423,11 +418,10 @@ input[type=text], input[type=password], select {
 }
 
 .product div {
-	border: 1px solid black;
 	padding-bottom: 50%;
 	display: flex;
 	width: 100%;
-	height: 50%;	
+	height: 50%;
 }
 
 .item-preview {
@@ -437,7 +431,7 @@ input[type=text], input[type=password], select {
 	padding-bottom: 50px;
 	position: absolute;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 .item {
@@ -447,44 +441,92 @@ input[type=text], input[type=password], select {
 	height: 70%;
 }
 
-
 .item div {
-	border: 1px solid black;
 	padding-bottom: 50%;
-	display: flex;
-	width: 100%;
-	height: 50%;	
-}
-
-.info {
-	margin-top: 5%;
-	width: 50%;
-	height: 70%;
-	text-align: left;
-}
-
-.info div div a p {
-	text-decoration: none;
-	color: black;
-}
-
-.info div {
-	background-color: pink;
-	border: 1px solid black;
 	display: flex;
 	width: 100%;
 	height: 50%;
 }
 
+.info {
+	margin-top: 5%;
+	width: 40%;
+	height: 70%;
+	text-align: left;
+}
+
+.info a {
+	text-decoration: none;
+	color: black;
+	width: 10%;
+	text-wrap: nowrap;
+	position: absolute;
+}
+
+.info div {
+	/* background-color: lightgray; */
+	display: flex;
+}
+
 .item-name-price {
+	width: 100%;
 	justify-content: space-between;
 }
 
-.item-name-price div{
-	width: 45%;
+.item-name-price div {
+	border-radius: 10px;
+	text-wrap: nowrap;
 	min-height: 40px;
 }
 
-.product-desc {
-	padding: 15% 0;
+.item-name-price div p {
+	margin-left: 0;
+}
+
+.product-desc p {
+	text-align: justify;
+	width: 100%;
+	padding-bottom: 2%;
+	margin-bottom: 3%;
+	border: 1px solid black;
+}
+
+.add-to-cart-btn {
+	padding: 15px 25px;
+	border: unset;
+	border-radius: 15px;
+	color: #212121;
+	z-index: 1;
+	background: #e8e8e8;
+	position: relative;
+	font-weight: 1000;
+	font-size: 15px;
+	-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+	box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+	transition: all 250ms;
+	overflow: hidden;
+	text-wrap: nowrap;
+}
+
+.add-to-cart-btn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	border-radius: 15px;
+	background-color: #212121;
+	z-index: -1;
+	-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+	box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+	transition: all 250ms;
+}
+
+.add-to-cart-btn:hover {
+	color: #e8e8e8;
+}
+
+.add-to-cart-btn:hover::before {
+	width: 100%;
 }
