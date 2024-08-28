@@ -170,7 +170,7 @@ hr {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	padding: 10px;
 	min-height: 100vh;
-	background-color: lightblue;
+	background-color: rgb(245,245,245);
 }
 
 .content p {
@@ -185,7 +185,8 @@ footer {
 	height: auto;
 	padding: 20px;
 	margin-top: 0%;
-	/* background-color: pink; */
+	background-color: rgb(12, 48, 74);
+	color: white;
 }
 
 footer ul {
@@ -207,7 +208,7 @@ footer ul li {
 
 footer ul li a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 .floating {
@@ -383,4 +384,50 @@ input[type=text], input[type=password], select {
 
 .enter-email input {
 	width: 50%;
+}
+
+.product-page-nav {
+	height: 30px;
+}
+
+.product-page-nav ul {
+	list-style: none;
+	display: flex;
+	position: absolute;
+	top: 20%;
+	left: 3.7%;
+}
+
+.product-page-nav ul li {
+	margin-left: 10px;
+}
+
+.product-page-nav ul a {
+	text-decoration: none;
+	color: black;
+}
+
+.item-list-preview {
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 50px;
+	position: absolute;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.product {
+	background-color: lightgreen;
+	margin-top: 5%;
+	width: 30%;
+	height: 70%;
+}
+
+.product div {
+	border: 1px solid black;
+	padding-bottom: 50%;
+	display: flex;
+	width: 100%;
+	height: 50%;	
 }
