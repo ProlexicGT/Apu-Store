@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 hr {
@@ -42,7 +43,7 @@ hr {
 
 .header {
 	padding: 30px;
-	/* background-color: bisque; */
+	background-color: rgb(245,245,245);
 	display: flex;
 	height: 100%;
 	align-content: center;
@@ -106,7 +107,6 @@ hr {
 	font-size: large;
 	text-decoration: none;
 	color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .top-nav-bar a:hover {
@@ -239,7 +239,6 @@ footer ul li a {
 	text-align: center;
 	width: 35%;
 	height: 100%;
-	font-family: Arial, Helvetica, sans-serif;
 }
 
 .float-right h1 {
@@ -379,7 +378,6 @@ input[type=text], input[type=password], select {
 
 .enter-email label {
 	font-size: larger;
-	font-family: Arial, Helvetica, sans-serif;
 }
 
 .enter-email input {
