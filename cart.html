@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Apu Store</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-content" id="container">
+				<div class="header-left">
+					<a href="index.html"><img src="/img/apu_logo.png" alt="APU Logo" title="APU Logo" class="apu_logo" /></a>
+				</div>
+				<div class="header-right">
+					<div class="reglog" id="right">
+						<a href="login.html">Login</a>
+						<a href="register.html">Register</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-nav-bar" id="container">
+			<ul>
+				<li id=""><a href="">Accessories</a></li>
+				<li id=""><a href="">Clothing</a></li>
+				<li id=""><a href="">Stationary</a></li>
+			</ul>
+		</div>
+		<div class="content" id="container">
+			<div class="product-page-nav-view-cart">
+				<div class="product-page-nav" id="container">
+					<ul>
+						<a href="index.html"><li>Home</li></a>
+						<li>/</li>
+						<a href="product-page-1.html"><li>Product</li></a>
+						<li>/</li>
+						<a href=""><li>Item</li></a>
+						<li>/</li>
+						<a href=""><li>View Cart</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="cart-list" id="container">
+				<div id="container">
+					<div class="item-box" id="container">
+						<div class="cart-item-picture"></div>
+						<div class="cart-item-name">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quam harum officiis consequatur ratione deserunt eos fugit atque quisquam hic?</p>
+						</div>
+						<div class="cart-item-quantity">
+							<div class="quantity">
+								<button class="minus" aria-label="Decrease">&minus;</button>
+								<input type="number" class="input-box" value="1" min="1" max="10" />
+								<button class="plus" aria-label="Increase">&plus;</button>
+							</div>
+						</div>
+						<div class="cart-item-price">
+							<p>Price 1</p>
+						</div>
+						<button id="cart-delete-btn">Delete</button>
+					</div>
+					<div class="item-box" id="container">
+						<div class="cart-item-picture"></div>
+						<div class="cart-item-name">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quam harum officiis consequatur ratione deserunt eos fugit atque quisquam hic?</p>
+						</div>
+						<div class="cart-item-quantity">
+							<div class="quantity">
+								<button class="minus" aria-label="Decrease">&minus;</button>
+								<input type="number" class="input-box" value="1" min="1" max="10" />
+								<button class="plus" aria-label="Increase">&plus;</button>
+							</div>
+						</div>
+						<div class="cart-item-price">
+							<p>Price 1</p>
+						</div>
+						<button id="cart-delete-btn">Delete</button>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-cart-list" id="container">
+				<button>Continue Shopping</button>
+				<div class="checkout">
+					<span>Total Price RM x</span>
+					<button>
+						<div>
+							<span class="cotxt">
+								<p>Checkout</p>
+							</span>
+						</div>
+						<div>
+							<span>
+								<p>Thank You</p>
+							</span>
+						</div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<hr />
+	<footer id="container">
+		<ul>
+			<h3>General Information</h3>
+			<li><a href="">Contact Us</a></li>
+			<li><a href="">Sizing Chart</a></li>
+			<li><a href="">About Us</a></li>
+		</ul>
+	</footer>
+	<script>
+		(function () {
+			const quantityContainer = document.querySelector(".quantity");
+			const minusBtn = quantityContainer.querySelector(".minus");
+			const plusBtn = quantityContainer.querySelector(".plus");
+			const inputBox = quantityContainer.querySelector(".input-box");
+
+			updateButtonStates();
+
+			quantityContainer.addEventListener("click", handleButtonClick);
+			inputBox.addEventListener("input", handleQuantityChange);
+
+			function updateButtonStates() {
+				const value = parseInt(inputBox.value);
+				minusBtn.disabled = value <= 1;
+				plusBtn.disabled = value >= parseInt(inputBox.max);
+			}
+
+			function handleButtonClick(event) {
+				if (event.target.classList.contains("minus")) {
+					decreaseValue();
+				} else if (event.target.classList.contains("plus")) {
+					increaseValue();
+				}
+			}
+
+			function decreaseValue() {
+				let value = parseInt(inputBox.value);
+				value = isNaN(value) ? 1 : Math.max(value - 1, 1);
+				inputBox.value = value;
+				updateButtonStates();
+				handleQuantityChange();
+			}
+
+			function increaseValue() {
+				let value = parseInt(inputBox.value);
+				value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.max));
+				inputBox.value = value;
+				updateButtonStates();
+				handleQuantityChange();
+			}
+
+			function handleQuantityChange() {
+				let value = parseInt(inputBox.value);
+				value = isNaN(value) ? 1 : value;
+
+				// Execute your code here based on the updated quantity value
+				console.log("Quantity changed:", value);
+			}
+		})();
+	</script>
+</html>
