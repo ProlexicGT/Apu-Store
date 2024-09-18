@@ -624,8 +624,13 @@ select {
 .cart-item-name {
 	height: 100%;
 	width: 40%;
+	text-align: left;
 	border: 1px solid black;
 	position: relative;
+}
+
+.cart-item-name p {
+	width: 90%;
 }
 
 .cart-item-quantity {
@@ -714,6 +719,10 @@ select {
 	font-size: larger;
 }
 
+.bottom-cart-list button:hover {
+	cursor: pointer;
+}
+
 .checkout {
 	position: absolute;
 	right: 0;
@@ -780,4 +789,95 @@ select {
 
 .checkout button:active {
 	transform: scale(0.95);
+}
+
+.checkout-title ul {
+	display: flex;
+	list-style: none;
+	width: 93%;
+	margin: 10px auto;
+}
+
+.ct1 {
+	text-align: left;
+	width: 55%;
+}
+
+.ct {
+	width: 15%;
+}
+
+.checkout-picture {
+	height: 70%;
+	width: 15%;
+	position: relative;
+}
+
+.checkout-name {
+	height: 70%;
+	width: 40%;
+	text-align: left;
+	position: relative;
+}
+
+.checkout-name p {
+	width: 90%;
+}
+
+.checkout-quantity {
+	height: 70%;
+	width: 15%;
+	position: relative;
+}
+
+.checkout-price {
+	height: 70%;
+	width: 15%;
+	position: relative;
+}
+
+.checkout-subtotal {
+	height: 70%;
+	width: 15%;
+	position: relative;
+}
+
+.checkout-total {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	width: 93%;
+	background-color: pink;
+	flex-direction: column;
+}
+
+.checkout-right {
+	position: absolute;
+	right: 3%;
+}
+
+.checkout-total p {
+	width: 120px;
+	text-wrap: nowrap;
+	font-size: large;
+	margin-bottom: 5px;
+}
+
+.checkout-total button {
+	cursor: pointer;
+	width: 120px;
+	height: 50px;
+	font-size: larger;
+	all: none;
+}
+
+.payment-form input:hover, .payment-form input:focus {
+	border-color: black;
+	box-shadow: none;
+}
+
+.payment-form input[type=number]::-webkit-inner-spin-button, 
+.payment-form input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

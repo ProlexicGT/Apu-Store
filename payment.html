@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Apu Store</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-content" id="container">
+				<div class="header-left">
+					<a href="index.html"><img src="/img/apu_logo.png" alt="APU Logo" title="APU Logo" class="apu_logo" /></a>
+				</div>
+				<div class="header-right">
+					<div class="reglog" id="right">
+						<a href="login.html">Login</a>
+						<a href="register.html">Register</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-nav-bar" id="container">
+			<ul>
+				<li id=""><a href="">Accessories</a></li>
+				<li id=""><a href="">Clothing</a></li>
+				<li id=""><a href="">Stationary</a></li>
+			</ul>
+		</div>
+		<div class="content" id="container">
+			<div class="product-page-nav-view-cart">
+				<div class="product-page-nav" id="container">
+					<ul>
+						<a href="index.html"><li>Home</li></a>
+						<li>/</li>
+						<a href="product-page-1.html"><li>Product</li></a>
+						<li>/</li>
+						<a href=""><li>Item</li></a>
+						<li>/</li>
+						<a href=""><li>View Cart</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="payment-form">
+				<form action="" method="post">
+					<div class="payment-page-phone">
+						<label for="phone">Phone Number</label>
+						<input type="tel" id="phone" pattern="[0-9]{1-15}" required>
+					</div>
+                    <div class="payment-page-address">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="payment-page-card">
+                        <label for="card">Credit/Debit Card</label>
+                        <input type="number" id="card" required>
+                    </div>
+                    <div class="payment-page-expiry-date">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="number" id="expiry-date" min="1" max="12" placeholder="Month" required>
+                        /
+                        <input type="number" id="expiry-date" placeholder="Year" required>
+                    </div>
+                    <div class="payment-page-cvv">
+                        <label for="cvv">CVV/CVC</label>
+                        <input type="number" pattern="[0-9]{3}" maxlength="3" id="cvv" required>
+                    </div>
+				</form>
+			</div>
+			<div class="checkout-total" id="container">
+				<div class="checkout-right">
+                    <input type="submit" value="Make Payment">
+                </div>
+			</div>
+		</div>
+	</body>
+	<hr />
+	<footer id="container">
+		<ul>
+			<h3>General Information</h3>
+			<li><a href="">Contact Us</a></li>
+			<li><a href="">Sizing Chart</a></li>
+			<li><a href="">About Us</a></li>
+		</ul>
+	</footer>
+</html>
