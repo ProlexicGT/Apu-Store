@@ -293,19 +293,20 @@ select {
 	outline: none;
 	background-color: #f8fafc;
 	color: #0d0c22;
-	transition: .5s ease;
-  }
-  
-  .input::placeholder {
+	transition: 0.5s ease;
+}
+
+.input::placeholder {
 	color: #94a3b8;
-  }
-  
-  .input:focus, input:hover {
+}
+
+.input:focus,
+.input:hover {
 	outline: none;
 	border-color: rgba(129, 140, 248);
 	background-color: #fff;
 	box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
-  }
+}
 
 .submit {
 	width: 100%;
@@ -880,12 +881,24 @@ select {
 	margin-left: 20%;
 }
 
-.payment-page-name, .payment-page-email, .payment-page-phone, .payment-page-address, .payment-page-card, .payment-page-expiry-date, .payment-page-cvv {
+.payment-page-name,
+.payment-page-email,
+.payment-page-phone,
+.payment-page-address,
+.payment-page-card,
+.payment-page-expiry-date,
+.payment-page-cvv {
 	display: flex;
 	margin-bottom: 10px;
 }
 
-.payment-page-name input, .payment-page-email input, .payment-page-phone input, .payment-page-address input, .payment-page-card input, .payment-page-expiry-date input, .payment-page-cvv input {
+.payment-page-name input,
+.payment-page-email input,
+.payment-page-phone input,
+.payment-page-address input,
+.payment-page-card input,
+.payment-page-expiry-date input,
+.payment-page-cvv input {
 	height: 35px;
 	border: 1px solid gray;
 	border-radius: 5px;
@@ -935,17 +948,43 @@ select {
 	width: 50px;
 }
 
-.payment-form input:hover, .payment-form input:focus {
+.payment-form input:hover,
+.payment-form input:focus {
 	border-color: black;
 	box-shadow: none;
 }
 
-.payment-form input[type=number]::-webkit-inner-spin-button, 
-.payment-form input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+.payment-form input[type="number"]::-webkit-inner-spin-button,
+.payment-form input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 .payment-page-left {
 	width: 30%;
+}
+
+.payment-button {
+	width: fit-content;
+	min-width: 100px;
+	height: 45px;
+	padding: 8px;
+	border-radius: 5px;
+	border: 2.5px solid #e0e1e4;
+	box-shadow: 0px 0px 20px -20px;
+	cursor: pointer;
+	background-color: white;
+	transition: all 0.2s ease-in-out 0ms;
+	user-select: none;
+	font-family: "Poppins", sans-serif;
+}
+
+.payment-button:hover {
+	background-color: #f2f2f2;
+	box-shadow: 0px 0px 20px -18px;
+
+}
+
+.payment-button:active {
+	transform: scale(0.95);
 }
