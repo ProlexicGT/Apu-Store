@@ -871,6 +871,70 @@ select {
 	all: none;
 }
 
+.payment-form {
+	margin-top: 20px;
+	text-align: left;
+}
+
+.payment-form label {
+	margin-left: 20%;
+}
+
+.payment-page-name, .payment-page-email, .payment-page-phone, .payment-page-address, .payment-page-card, .payment-page-expiry-date, .payment-page-cvv {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.payment-page-name input, .payment-page-email input, .payment-page-phone input, .payment-page-address input, .payment-page-card input, .payment-page-expiry-date input, .payment-page-cvv input {
+	height: 35px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 0px 15px;
+}
+
+.payment-page-name-field {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.payment-page-name input {
+	width: 45%;
+}
+
+.payment-page-email input {
+	width: 350px;
+}
+
+.payment-page-phone input {
+	width: 200px;
+}
+
+.payment-page-address-right {
+	width: 50%;
+}
+
+.payment-page-address-city {
+	display: flex;
+	justify-content: space-between;
+}
+
+.payment-page-address-city div {
+	width: 45%;
+}
+
+.payment-page-card input {
+	width: 200px;
+}
+
+.payment-page-expiry-date input {
+	width: 100px;
+}
+
+.payment-page-cvv input {
+	width: 50px;
+}
+
 .payment-form input:hover, .payment-form input:focus {
 	border-color: black;
 	box-shadow: none;
@@ -880,4 +944,8 @@ select {
 .payment-form input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+.payment-page-left {
+	width: 30%;
 }
