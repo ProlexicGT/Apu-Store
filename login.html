@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: lightgray;">
+    <div class="floating">
+        <div class="float-left">
+            <div id="abs-left">
+                <a href="index.html"><img src="/img/back_logo.png" alt="" id="back-logo"></a>
+            </div>
+        </div>
+        <div class="float-right" id="container">
+            <h1>Login</h1>
+            <form method="post" action="#">
+                <div >
+                    <label for="username">Username: </label>
+                    <br>
+                    <input  class="input" type="text" id="username" placeholder="Username / Email" name="name">
+                </div>
+                <div class="pass" id="container">
+                    <label for="pass">Password: </label>
+                    <br>
+                    <input class="input" type="password" placeholder="Password">
+                    <div>
+                        <a href="forgetpass.html" id="abs-right">Forget Password</a>
+                    </div>
+                </div>
+                <div>
+                    <input class="submit" type="submit" value="Login">
+                </div>
+                <div>
+                    <a href="register.html" class="login-page-register-button">Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
