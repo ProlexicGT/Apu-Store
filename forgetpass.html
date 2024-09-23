@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forget Password</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script> <!-- Link to your JavaScript file -->
 </head>
 <body style="background-color: lightgray;">
     <div class="floating">
@@ -15,17 +16,17 @@
         </div>
         <h1 class="forget-pass-title">Forget Password</h1>
         <div class="enter-email-layout">
-            <form action="">
+            <form id="forgetPassForm" method="post" action="#" onsubmit="ResetPassword(event)">
                 <div class="enter-email">
                     <label for="email"><h3>Enter Your Email:</h3></label>
                     <br>
-                    <input class="input" type="text" name="email" id="email">
+                    <input class="input" type="text" name="email" id="email" required>
                 </div>
-            </form>
             <a href="login.html">Back to Login</a>
             <div>
                 <input class="submit" type="submit" value="Send Email">
             </div>
+            </form>
         </div>
     </div>
 </body>
