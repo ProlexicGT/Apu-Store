@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Apu Store</title>
+</head>
+<body>
+<div class="header">
+    <div class="header-content container">
+        <div class="header-left">
+            <a href="/"><img src="/img/apu_logo.png" alt="APU Logo" title="APU Logo" class="apu_logo" /></a>
+        </div>
+        <div class="header-right">
+            <div class="reglog" id="right">
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="top-nav-bar container">
+    <ul>
+        <li id=""><a href="">Accessories</a></li>
+        <li id=""><a href="">Clothing</a></li>
+        <li id=""><a href="">Stationary</a></li>
+    </ul>
+</div>
+<div class="content container">
+    <div class="product-page-nav-view-cart">
+        <div class="product-page-nav container">
+            <ul>
+                <a href="/"><li>Home</li></a>
+                <li>/</li>
+                <a href="/category/accessories"><li>Product</li></a>
+                <li>/</li>
+                <a href=""><li>Item</li></a>
+                <li>/</li>
+                <a href=""><li>View Cart</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="payment-form">
+        <form action="" method="post">
+            <div class="payment-page-name">
+                <div class="payment-page-left">
+                    <label for="fname">Full Name</label>
+                </div>
+                <div class="payment-page-name-field">
+                    <input type="text" id="fname" placeholder="First Name" required />
+                    <input type="text" placeholder="Last Name" required />
+                </div>
+            </div>
+            <div class="payment-page-email">
+                <div class="payment-page-left">
+                    <label for="email">Email</label>
+                </div>
+                <input type="email" id="email" required />
+            </div>
+            <div class="payment-page-phone">
+                <div class="payment-page-left">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <input type="tel" id="phone" pattern="[0-9]{1-15}" maxlength="15" required />
+            </div>
+            <div class="payment-page-address">
+                <div class="payment-page-left">
+                    <label for="address">Address</label>
+                </div>
+                <div class="payment-page-address-right">
+                    <input type="text" id="address" placeholder="Address Line 1" required />
+                    <input type="text" placeholder="Address Line 2"/>
+                    <div class="payment-page-address-city">
+                        <div>
+                            <input type="text" placeholder="City" required />
+                        </div>
+                        <div>
+                            <input type="text" placeholder="State / Province" required />
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Post / Zip code" required />
+                </div>
+            </div>
+            <div class="payment-page-card">
+                <div class="payment-page-left">
+                    <label for="card">Credit/Debit Card</label>
+                </div>
+                <input type="number" id="card" maxlength="26" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required />
+            </div>
+            <div class="payment-page-expiry-date">
+                <div class="payment-page-left">
+                    <label for="expiry-date">Expiry Date</label>
+                </div>
+                <input type="tel" pattern="[0-12]{1}/[0-99][1]" id="expiry-date" maxlength="5" placeholder="Month/Year" required />
+            </div>
+            <div class="payment-page-cvv">
+                <div class="payment-page-left">
+                    <label for="cvv">CVV/CVC</label>
+                </div>
+                <input type="number" pattern="[0-9]{3}" maxlength="3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="cvv" required />
+            </div>
+        </form>
+    </div>
+    <div class="checkout-total container">
+        <div class="checkout-right">
+            <input type="submit" class="payment-button" value="Make Payment" />
+        </div>
+    </div>
+</div>
+</body>
+<hr />
+<footer class="container">
+    <ul>
+        <h3>General Information</h3>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Sizing Chart</a></li>
+        <li><a href="">About Us</a></li>
+    </ul>
+</footer>
+</html>
