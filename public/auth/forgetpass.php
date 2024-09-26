@@ -11,7 +11,7 @@
 <div class="floating">
     <div class="float-left">
         <div id="abs-left">
-            <a href="/"><img src="/img/back_logo.png" alt="" id="back-logo"></a>
+            <a href="/"><img src="/src/img/back_logo.png" alt="" id="back-logo"></a>
         </div>
     </div>
     <h1 class="forget-pass-title">Forget Password</h1>

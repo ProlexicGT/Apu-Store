@@ -12,7 +12,7 @@
 <header class="header">
     <div class="header-content container">
         <div class="header-left">
-            <a href="/"><img src="/img/apu_logo.png" alt="APU Logo" title="APU Logo" class="apu_logo"></a>
+            <a href="/"><img src="/src/img/apu_logo.png" alt="APU Logo" title="APU Logo" class="apu_logo"></a>
         </div>
         <div class="header-right">
             <div class="reglog" id="right">
