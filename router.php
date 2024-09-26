@@ -22,8 +22,14 @@ switch ($path) {
         break;
 
     case '/register':
-        require 'public/auth/register.php';
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            require 'controllers/register.php';
+        }
+        else {
+            require 'public/auth/register.php';
+        }
         break;
+
 
     case '/forgetpass':
         require 'public/auth/forgetpass.php';
