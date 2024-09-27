@@ -27,7 +27,7 @@
                 <br>
                 <input class="input" type="password" id="password" name="password" placeholder="Password" required>
                 <div>
-                    <a href="/forgetpass" id="abs-right">Forget Password?</a>
+                    <a href="/forgetpass">Forget Password?</a>
                 </div>
             </div>
             <div>
