@@ -11,7 +11,7 @@
 <div class="floating">
     <div class="float-left">
         <div id="abs-left">
-            <a href="/"><img src="/src/img/back_logo.png" alt="Back to Home" id="back-logo"></a>
+            <a href="/"><img src="/src/img/icons8-back-100.png" alt="Back" id="back-logo"></a>
         </div>
     </div>
     <div class="float-right" id="container">

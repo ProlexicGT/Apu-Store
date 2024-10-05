@@ -1,9 +1,9 @@
 <?php require_once($root . 'templates/header.php'); ?>
 <div class="wrapper container">
     <div class="group">
-        <a href=""><img src="/src/img/car1.jpg" class="slide-image1" alt=""></a>
-        <a href=""><img src="/src/img/car2.png" class="slide-image2" alt=""></a>
-        <a href=""><img src="/src/img/car3.jpg" class="slide-image3" alt=""></a>
+        <a href=""><img src="/src/img/banner_1.png" class="slide-image1" alt=""></a>
+        <a href=""><img src="/src/img/banner_2.png" class="slide-image2" alt=""></a>
+        <a href=""><img src="/src/img/banner_3.png" class="slide-image3" alt=""></a>
     </div>
 </div>
 <div class="content">
