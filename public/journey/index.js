@@ -7,6 +7,8 @@ function Login(event) {
     alert(`Username: ${username}\nPassword: ${password}`);
 }
 
+// [Note] Register function not working for now because of php validation.
+
 function Register(event) {
     event.preventDefault();
 
