@@ -30,7 +30,6 @@ switch ($path) {
         }
         break;
 
-
     case '/forgetpass':
         require 'public/auth/forgetpass.php';
         break;

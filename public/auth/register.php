@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
     <link rel="stylesheet" href="../../style.css">
-    <script src="index.js" defer></script>
+    <script src="/public/journey/index.js" defer></script>
 </head>
 <body style="background-color: lightgray;">
 <div class="floating">
     <div class="float-left">
         <div id="abs-left">
-            <a href="/"><img src="/src/img/back_logo.png" alt="" id="back-logo"></a>
+            <a href="/"><img src="/src/img/icons8-back-100.png" alt="Back" id="back-logo"></a>
         </div>
     </div>
     <div class="float-right" id="container">
