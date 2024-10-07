@@ -136,7 +136,7 @@ hr {
 .wrapper img {
     position: absolute;
     max-width: 1536px;
-    left: calc(1100px * 3);
+    left: calc(1020px * 3);
     animation-name: carousel;
     animation-duration: 30s;
     animation-timing-function: linear;
