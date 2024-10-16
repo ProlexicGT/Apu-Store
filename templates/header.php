@@ -16,8 +16,16 @@
         </div>
         <div class="header-right">
             <div class="reglog" id="right">
-                <a href="login">Login</a>
-                <a href="register">Register</a>
+                <a href="login" class="desktop-page-reglog">Login</a>
+                <a href="register" class="desktop-page-reglog">Register</a>
+                <input type="checkbox" class="toggle-menu mobile">
+                <div class="hamburger"></div>
+                <div class="burger-menu mobile container">
+                    <ul>
+                        <li><a href="login">Login</a></li>
+                        <li><a href="register">Register</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
