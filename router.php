@@ -35,15 +35,15 @@ switch ($path) {
         break;
 
     case '/category/accessories':
-        require 'public/categories/accessories.php';
+        require 'public/category/accessories.php';
         break;
 
     case '/category/clothing':
-        require 'public/categories/clothing.php';
+        require 'public/category/clothing.php';
         break;
 
     case '/category/stationary':
-        require 'public/categories/stationary.php';
+        require 'public/category/stationary.php';
         break;
 
     default:
