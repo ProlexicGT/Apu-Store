@@ -11,28 +11,28 @@
 		<div class="product">
 			<div class="product-image">
 				<p>Image</p>
-				<img src="" alt="">
+				<img src="/src/store/book.png" alt="Book">
 			</div>
 			<div class="product-desc">
-				<p>Desc</p>
+				<p>Unleash your creativity and stay organized with APU Book™. The perfect companion for students who loves to jot down thoughts, ideas, and dreams. This notebook is as good for the planet as it is for your mind.</p>
 			</div>
 		</div>
 		<div class="product">
 			<div class="product-image">
 				<p>Image</p>
-				<img src="" alt="">
+				<img src="/src/store/calculator.png" alt="Calculator">
 			</div>
 			<div class="product-desc">
-				<p>Desc</p>
+				<p>Be efficient with APU Calculator™. The perfect tool for students who require a maths companion. This calculator not only helps you crunch numbers but also supports eco-friendly practices.</p>
 			</div>
 		</div>
 		<div class="product">
 			<div class="product-image">
 				<p>Image</p>
-				<img src="" alt="">
+				<img src="/src/store/pen.png" alt="Pen">
 			</div>
 			<div class="product-desc">
-				<p>Desc</p>
+				<p>Elevate your note-taking game with APU Pen™. Designed specifically for modern university student. Manufactured with sustainable materials, this pen delivers a smooth, reliable writing experience at the same time reflects your commitment to the planet.</p>
 			</div>
 		</div>
 	</div>
