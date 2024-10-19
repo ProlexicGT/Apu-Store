@@ -14,6 +14,10 @@ hr {
     background-color: #333; /* Modern Browsers */
 }
 
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
 #container {
     /* border: solid 2px #000; */
     position: relative;
@@ -196,6 +200,11 @@ footer {
     color: white;
 }
 
+footer a:hover {
+    color: rgb(45, 129, 188);
+    transition: color 200ms ease;
+}
+
 footer ul {
     margin-left: auto;
     margin-right: auto;
@@ -287,6 +296,8 @@ footer ul li a {
 
 input[type="text"],
 input[type="password"],
+input[type="email"],
+textarea,
 select {
     width: 100%;
     padding: 12px 20px;
@@ -1144,4 +1155,40 @@ select {
         box-shadow: - 1px - rgba(255,255,255,0.1)
         inset;
     }
+
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+.contact-container {
+    display: flex;
+}
+
+.contact-form, .contact-desc {
+    flex: 1;
+    padding: 40px;
+}
+
+.contact-form h2, textarea {
+    margin-bottom: 40px;
+}
+
+.contact-desc h2 {
+    margin-bottom: 40px;
+}
+
+.contact-desc p {
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+.email-link {
+    color: #000000;
+    transition: color 200ms ease;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    color: #5796cc;
 }

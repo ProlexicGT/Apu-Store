@@ -19,12 +19,12 @@
         <h1>Login</h1>
         <form id="loginForm" method="post" action="#" onsubmit="Login(event)">
             <div>
-                <label for="username">Username: </label>
+                <label for="username">Username</label>
                 <br>
                 <input class="input" type="text" id="username" name="username" placeholder="Username / Email" required>
             </div>
             <div class="pass">
-                <label for="password">Password: </label>
+                <label for="password">Password</label>
                 <br>
                 <input class="input" type="password" id="password" name="password" placeholder="Password" required>
                 <div>
