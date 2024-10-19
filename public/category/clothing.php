@@ -10,9 +10,11 @@
 	<div class="item-list-preview" id="container">
 		<div class="product">
 			<a href="#">
-				<img src="/src/store/hat.png" alt="Hat" class="product-image">
-				<div class="product-name">
-					<h3>Hat</h3>
+				<div class="product-name-pos">
+					<img src="/src/store/hat.png" alt="Hat" class="product-image">
+					<div class="product-name">
+						<h3>Hat</h3>
+					</div>
 				</div>
 				<hr>
 				<div class="product-desc">
@@ -22,9 +24,11 @@
 		</div>
 		<div class="product">
 			<a href="#">
-				<img src="/src/store/necktie.png" alt="Neck Tie" class="product-image">
-				<div class="product-name">
-					<h3>Neck Tie</h3>
+				<div class="product-name-pos">
+					<img src="/src/store/necktie.png" alt="Neck Tie" class="product-image">
+					<div class="product-name">
+						<h3>Neck Tie</h3>
+					</div>
 				</div>
 				<hr>
 				<div class="product-desc">
@@ -34,10 +38,12 @@
 		</div>
 		<div class="product">
 			<a href="#">
+			<div class="product-name-pos">
 				<img src="/src/store/tshirt.png" alt="T Shirt" class="product-image">
 				<div class="product-name">
 					<h3>T-Shirt</h3>
 				</div>
+			</div>
 				<hr>
 				<div class="product-desc">
 					<p>Experience ultimate comfort and style with APU T-Shirt™. Designed for students who value fashion and sustainability. Perfect for everyday wear, this versatile tee is a must-have for any wardrobe. T-Shirt material is made using sustainably sourced cotton.</p>

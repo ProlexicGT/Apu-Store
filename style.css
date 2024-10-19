@@ -1159,6 +1159,53 @@ textarea {
     }
 }
 
+@media only screen and (min-width: 1011px) {
+    .product-name-pos {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* For tablet and mobile phone in product list page */
+@media only screen and (max-width: 1010px) {
+    .item-list-preview {
+        display: initial;
+    }
+
+    .product {
+        margin: 3% auto;
+        display: flex;
+        width: 80%;
+        height: 30%;
+    }
+    
+    .product a {
+        margin: auto;
+        display: flex;
+    }
+    
+    .product-name-pos {
+        margin: auto;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .product-name {
+        margin-bottom: 10px;
+    }
+
+    .product hr {
+        margin: auto 0;
+        transform: rotate(90deg);
+    }
+
+    .product-desc {
+        margin: auto;
+    }
+}
+
 .contact-container {
     display: flex;
 }

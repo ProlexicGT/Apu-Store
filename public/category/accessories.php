@@ -10,21 +10,25 @@
 	<div class="item-list-preview" id="container">
 		<div class="product">
 			<a href="#">
-				<img src="/src/store/backpack.png" alt="Backpack" class="product-image">
-				<div class="product-name">
-					<h3>Backpack</h3>
+				<div class="product-name-pos">
+					<img src="/src/store/backpack.png" alt="Backpack" class="product-image">
+					<div class="product-name">
+						<h3>Backpack</h3>
+					</div>
 				</div>
 				<hr>
 				<div class="product-desc">
 					<p>Elevate your campus experience with APU Backpack™. Designed for students who value style and sustainability. Crafted from 60% recycled materials, this backpack not only looks great but also helps reduce your carbon footprint.</p>
 				</div>
-			</a>
+			<div.product-name-po/a>
 		</div>
 		<div class="product">
 			<a href="#">
-				<img src="/src/store/bottle.png" alt="Bottle" class="product-image">
-				<div class="product-name">
-					<h3>Bottle</h3>
+				<div class="product-name-pos">
+					<img src="/src/store/bottle.png" alt="Bottle" class="product-image">
+						<div class="product-name">
+							<h3>Bottle</h3>
+						</div>
 				</div>
 				<hr>
 				<div class="product-desc">
@@ -34,9 +38,11 @@
 		</div>
 		<div class="product">
 			<a href="#">
-				<img src="/src/store/totebag.png" alt="Tote Bag" class="product-image">
-				<div class="product-name">
-					<h3>Tote Bag</h3>
+				<div class="product-name-pos">
+					<img src="/src/store/totebag.png" alt="Tote Bag" class="product-image">
+						<div class="product-name">
+							<h3>Tote Bag</h3>
+						</div>
 				</div>
 				<hr>
 				<div class="product-desc">
