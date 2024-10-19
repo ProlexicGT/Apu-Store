@@ -1,7 +1,5 @@
 <?php require_once($root . 'templates/header.php'); ?>
 <div class="content">
-    <h1>404</h1>
-    <p>Page Not Found</p>
-    <p>The page you are looking for is no longer available.</p>
+    <img src="/src/img/tshirt_sizing.png" class="sizing-image" alt="T-Shirt Sizing Chart">
 </div>
 <?php require_once($root . 'templates/footer.php'); ?>

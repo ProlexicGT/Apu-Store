@@ -10,7 +10,7 @@
         <input class="input" type="email" id="formEmail" name="email" required>
 
         <label for="formEnquiry">Enquiry</label>
-        <textarea class="input" id="formEnquiry" name="enquiry" required></textarea>
+        <textarea class="input" id="formEnquiry" name="enquiry" placeholder="Write something..." required></textarea>
 
         <input type="submit" value="Submit" href="#" class="submit">
     </form>
