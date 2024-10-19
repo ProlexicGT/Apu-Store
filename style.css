@@ -188,6 +188,11 @@ hr {
     margin-bottom: 0%;
 }
 
+.content img {
+    max-width: 80%; /* Image will resize properly on smaller display if max-width is 80% apparently?! */
+    height: auto;
+}
+
 footer {
     height: auto;
     padding: 20px;
@@ -1184,4 +1189,10 @@ textarea {
 
 .email-link:hover {
     color: #5796cc;
+}
+
+.sizing-image {
+    padding: 40px;
+    width: 650px;
+    height: 650px;
 }
