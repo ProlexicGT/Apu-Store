@@ -19,7 +19,7 @@
     <div class="enter-email-layout">
         <form id="forgetPassForm" method="post" action="#" onsubmit="ResetPassword(event)">
             <div class="enter-email">
-                <label for="email"><h3>Enter your email:</h3></label>
+                <label for="email"><h3>Enter your email</h3></label>
                 <br>
                 <input class="input" type="text" name="email" id="email" required>
             </div>

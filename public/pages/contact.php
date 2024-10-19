@@ -4,13 +4,13 @@
     <h2>Send us a message</h2>
     <form action="contact" method="#">
         <label for="formName">Name</label>
-        <input type="text" id="formName" name="name" required>
+        <input class="input" type="text" id="formName" name="name" required>
 
         <label for="formEmail">Email</label>
-        <input type="email" id="formEmail" name="email" required>
+        <input class="input" type="email" id="formEmail" name="email" required>
 
         <label for="formEnquiry">Enquiry</label>
-        <textarea id="formEnquiry" name="enquiry" rows="10" required></textarea>
+        <textarea class="input" id="formEnquiry" name="enquiry" required></textarea>
 
         <input type="submit" value="Submit" href="#" class="submit">
     </form>
