@@ -9,31 +9,40 @@
 	</div>
 	<div class="item-list-preview" id="container">
 		<div class="product">
-			<div class="product-name">
-				<h3>Backpack</h3>
-			</div>
-			<img src="/src/store/backpack.png" alt="Backpack" class="product-image">
-			<div class="product-desc">
-				<p>Elevate your campus experience with APU Backpack™. Designed for students who value style and sustainability. Crafted from 60% recycled materials, this backpack not only looks great but also helps reduce your carbon footprint.</p>
-			</div>
+			<a href="#">
+				<img src="/src/store/backpack.png" alt="Backpack" class="product-image">
+				<div class="product-name">
+					<h3>Backpack</h3>
+				</div>
+				<hr>
+				<div class="product-desc">
+					<p>Elevate your campus experience with APU Backpack™. Designed for students who value style and sustainability. Crafted from 60% recycled materials, this backpack not only looks great but also helps reduce your carbon footprint.</p>
+				</div>
+			</a>
 		</div>
 		<div class="product">
-			<div class="product-name">
-				<h3>Bottle</h3>
-			</div>
-			<img src="/src/store/bottle.png" alt="Bottle" class="product-image">
-			<div class="product-desc">
-				<p>Stay hydrated with APU Bottle™. Perfect companion for every adventure, whether you are hitting the gym, heading to class, or enjoying a weekend getaway. Designed using non toxic and BPA-free materials for long term usage.</p>
-			</div>
+			<a href="#">
+				<img src="/src/store/bottle.png" alt="Bottle" class="product-image">
+				<div class="product-name">
+					<h3>Bottle</h3>
+				</div>
+				<hr>
+				<div class="product-desc">
+					<p>Stay hydrated with APU Bottle™. Perfect companion for every adventure, whether you are hitting the gym, heading to class, or enjoying a weekend getaway. Designed using non toxic and BPA-free materials for long term usage.</p>
+				</div>
+			</a>
 		</div>
 		<div class="product">
-			<div class="product-name">
-				<h3>Tote Bag</h3>
-			</div>
-			<img src="/src/store/totebag.png" alt="Tote Bag" class="product-image">
-			<div class="product-desc">
-				<p>Be stylish while sustainable with APU Tote Bag™. Perfect for university, shopping, or a day at the beach. This versatile bag combines functionality with a commitment to the environment. Canvas material is made using sustainably sourced cotton.</p>
-			</div>
+			<a href="#">
+				<img src="/src/store/totebag.png" alt="Tote Bag" class="product-image">
+				<div class="product-name">
+					<h3>Tote Bag</h3>
+				</div>
+				<hr>
+				<div class="product-desc">
+					<p>Be stylish while sustainable with APU Tote Bag™. Perfect for university, shopping, or a day at the beach. This versatile bag combines functionality with a commitment to the environment. Canvas material is made using sustainably sourced cotton.</p>
+				</div>
+			</a>
 		</div>
 	</div>
 </div>
