@@ -10,9 +10,11 @@
 	<div class="item-list-preview" id="container">
 		<div class="product">
 			<a href="#">
-				<img src="/src/store/book.png" alt="Book" class="product-image">
-				<div class="product-name">
-					<h3>Book</h3>
+				<div class="product-name-pos">
+					<img src="/src/store/book.png" alt="Book" class="product-image">
+					<div class="product-name">
+						<h3>Book</h3>
+					</div>
 				</div>
 				<hr>
 				<div class="product-desc">
@@ -22,9 +24,11 @@
 		</div>
 		<div class="product">
 			<a href="#">
-				<img src="/src/store/calculator.png" alt="Calculator" class="product-image">
-				<div class="product-name">
-					<h3>Calculator</h3>
+				<div class="product-name-pos">
+					<img src="/src/store/calculator.png" alt="Calculator" class="product-image">
+					<div class="product-name">
+						<h3>Calculator</h3>
+					</div>
 				</div>
 				<hr>
 				<div class="product-desc">
@@ -34,9 +38,11 @@
 		</div>
 		<div class="product">
 			<a href="#">
-				<img src="/src/store/pen.png" alt="Pen" class="product-image">
-				<div class="product-name">
-					<h3>Pen</h3>
+				<div class="product-name-pos">
+					<img src="/src/store/pen.png" alt="Pen" class="product-image">
+					<div class="product-name">
+						<h3>Pen</h3>
+					</div>
 				</div>
 				<hr>
 				<div class="product-desc">
