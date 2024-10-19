@@ -1152,12 +1152,31 @@ textarea {
     .contact-container {
         flex-direction: column;
     }
+
+
+    .product-desc p {
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* number of lines to show */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-align: start;
+    }
 }
 
 @media only screen and (min-width: 1011px) {
     .product-name-pos {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .product-desc p {
+        display: -webkit-box;
+        -webkit-line-clamp: 6; /* number of lines to show */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-align: start;
     }
 }
 
@@ -1197,7 +1216,15 @@ textarea {
     }
 
     .product-desc {
-        margin: auto;
+        margin: auto 10px;
+    }
+
+    .product-desc p {
+        display: -webkit-box;
+        -webkit-line-clamp: 10; /* number of lines to show */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-align: start;
     }
 }
 
