@@ -121,7 +121,7 @@ hr {
 
 .wrapper {
     max-width: 1536px;
-    height: 368px;
+    height: 230px;
     width: 100%;
     position: relative;
     margin-inline: auto;
@@ -138,28 +138,35 @@ hr {
     max-width: 1536px;
     left: calc(1020px * 3);
     animation-name: carousel;
-    animation-duration: 30s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes carousel {
     to {
-        left: -1536px;
+        left: -960px;
     }
 }
+
 .slide-image1 {
-    animation-delay: calc(30s / 3 * (3 - 1) * -1);
+    animation-delay: calc(20s / 3 * (3 - 1) * -1);
+    width: 960px;
+    height: 230px;
     /* display: none; */
 }
 
 .slide-image2 {
-    animation-delay: calc(30s / 3 * (3 - 2) * -1);
+    animation-delay: calc(20s / 3 * (3 - 2) * -1);
+    width: 960px;
+    height: 230px;
     /* display: none; */
 }
 
 .slide-image3 {
-    animation-delay: calc(30s / 3 * (3 - 3) * -1);
+    animation-delay: calc(20s / 3 * (3 - 3) * -1);
+    width: 960px;
+    height: 230px;
     /* display: none; */
 }
 
@@ -517,6 +524,18 @@ select {
 
 .item-name-price div p {
     margin-left: 0;
+}
+
+.product-name {
+    /* [TODO] Add product name styling for accessories.php, clothing.php, and stationary.php pages */
+}
+
+.product-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .product-desc p {
@@ -1115,4 +1134,3 @@ select {
         inset;
     }
 }
-
