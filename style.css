@@ -4,13 +4,13 @@
     src: url('/src/font/SF-Pro-Text-Regular.otf');
 }
 
-p, a {
+p, a, .font-paragraph {
     font-family: "SF Pro Regular", sans-serif;
     font-weight: normal;
     font-size: 16px;
 }
 
-sub, input, textarea, li {
+sub, input, textarea, .font-subscript {
     font-family: "SF Pro Regular", sans-serif;
     font-weight: normal;
     color: #595c5f;
@@ -22,13 +22,13 @@ sub, input, textarea, li {
     src: url('/src/font/SF-Pro-Text-Semibold.otf');
 }
 
-h1 {
+h1, .font-title {
     font-family: "SF Pro Semibold", sans-serif;
     font-weight: normal;
     font-size: 32px;
 }
 
-h2 {
+h2, .font-header {
     font-family: "SF Pro Semibold", sans-serif;
     font-weight: normal;
     font-size: 24px;
@@ -40,13 +40,13 @@ h3 {
     font-size: 20px;
 }
 
-label {
+label, .font-paragraph-bold {
     font-family: "SF Pro Semibold", sans-serif;
     font-weight: normal;
     font-size: 16px;
 }
 
-h4 {
+h4, .font-subscript-bold {
     font-family: "SF Pro Semibold", sans-serif;
     font-weight: normal;
     color: #595c5f;
@@ -62,7 +62,7 @@ h4 {
     color: black;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 hr {
@@ -150,7 +150,7 @@ hr {
     text-decoration: none;
     color: black;
     border-radius: 6px;
-    font-size: 23px;
+    /* font-size: 23px; */
 }
 
 .top-nav-bar {
@@ -170,7 +170,7 @@ hr {
 
 .top-nav-bar a {
     margin-right: 5px;
-    font-size: large;
+    /* font-size: large; */
     text-decoration: none;
     color: white;
 }
@@ -188,6 +188,7 @@ hr {
     margin-inline: auto;
     overflow: hidden;
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
+    background-color: #ebebeb;
 }
 
 .wrapper:hover img {
@@ -233,7 +234,7 @@ hr {
 
 .content {
     text-align: center;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
     padding: 10px;
     min-height: 100vh;
     background-color: rgb(245, 245, 245);
@@ -336,7 +337,7 @@ footer ul li a {
 }
 
 .float-right form div {
-    font-size: 20px;
+    /* font-size: 20px; */
     margin-bottom: 5%;
 }
 
@@ -351,7 +352,7 @@ footer ul li a {
 .pass div a {
     text-decoration: none;
     color: black;
-    font-size: small;
+    /* font-size: small; */
 }
 
 input[type="text"],
@@ -401,7 +402,7 @@ textarea {
     border-radius: 4px;
     cursor: pointer;
     transition: transform 0.4s;
-    font-size: medium;
+    /* font-size: medium; */
 }
 
 .submit:hover {
@@ -414,7 +415,7 @@ textarea {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: medium;
+    font-size: 14px;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -474,19 +475,19 @@ textarea {
 .enter-email-layout div input[type="submit"] {
     width: 30%;
     margin-top: 3%;
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: black;
     color: white;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .enter-email-layout div input[type="submit"]:hover {
     background-color: rgb(71, 71, 71);
 }
 
-.enter-email label {
+/* .enter-email label {
     font-size: larger;
-}
+} */
 
 .enter-email input {
     width: 50%;
@@ -634,8 +635,8 @@ textarea {
     z-index: 1;
     background: #e8e8e8;
     position: relative;
-    font-weight: 1000;
-    font-size: 15px;
+    /* font-weight: 1000; */
+    /* font-size: 15px; */
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms;
@@ -756,7 +757,7 @@ textarea {
     height: 100%;
     width: 15%;
     cursor: pointer;
-    font-size: large;
+    /* font-size: large; */
     border: 1px solid black;
     border-radius: none;
     transition: all 200ms;
@@ -788,7 +789,7 @@ textarea {
     color: black;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    /* font-size: 20px; */
     width: 30px;
     height: auto;
     text-align: center;
@@ -800,7 +801,7 @@ textarea {
     text-align: center;
     border: none;
     padding: 8px 10px;
-    font-size: 16px;
+    /* font-size: 16px; */
     outline: none;
 }
 
@@ -821,7 +822,7 @@ textarea {
 .bottom-cart-list button {
     width: 200px;
     height: 50px;
-    font-size: larger;
+    /* font-size: larger; */
 }
 
 .bottom-cart-list button:hover {
@@ -887,8 +888,8 @@ textarea {
 }
 
 .checkout button p {
-    font-size: 17px;
-    font-weight: bold;
+    /* font-size: 17px; */
+    /* font-weight: bold; */
     color: #ffffff;
 }
 
@@ -964,7 +965,7 @@ textarea {
 .checkout-total p {
     width: 120px;
     text-wrap: nowrap;
-    font-size: large;
+    /* font-size: large; */
     margin-bottom: 5px;
 }
 
@@ -972,7 +973,7 @@ textarea {
     cursor: pointer;
     width: 120px;
     height: 50px;
-    font-size: larger;
+    /* font-size: larger; */
     all: none;
 }
 
@@ -1080,7 +1081,7 @@ textarea {
     background-color: white;
     transition: all 0.2s ease-in-out 0ms;
     user-select: none;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
 }
 
 .payment-button:hover {
@@ -1208,7 +1209,7 @@ textarea {
     }
 
     .burger-menu li a, .burger-menu li a:hover {
-        font-size: 24px;
+        /* font-size: 24px; */
         box-shadow: - 1px - rgba(255,255,255,0.1)
         inset;
     }
