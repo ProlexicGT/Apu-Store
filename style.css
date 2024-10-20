@@ -235,8 +235,8 @@ hr {
 .content {
     text-align: center;
     /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
-    padding: 10px;
-    min-height: 100vh;
+    padding: 40px;
+    min-height: 500px;
     background-color: rgb(245, 245, 245);
 }
 
@@ -245,7 +245,6 @@ hr {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0%;
 }
 
 .content img {
@@ -1227,6 +1226,14 @@ textarea {
         overflow: hidden;
         text-align: start;
     }
+
+    .content {
+        padding: 10px 20px;
+    }
+
+    .content p {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 1011px) {
@@ -1316,13 +1323,14 @@ textarea {
     margin-bottom: 40px;
 }
 
-.email-link {
-    color: #000000;
+.link {
+    color: #0c304a;
+    font-weight: 600;
     transition: color 200ms ease;
     text-decoration: none;
 }
 
-.email-link:hover {
+.link:hover {
     color: #5796cc;
 }
 
@@ -1330,4 +1338,12 @@ textarea {
     padding: 40px;
     width: 650px;
     height: 650px;
+}
+
+.about-us h2, h4, p {
+    margin-bottom: 25px;
+}
+
+.home-page h1, p {
+    margin-bottom: 25px;
 }

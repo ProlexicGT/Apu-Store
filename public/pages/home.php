@@ -7,7 +7,9 @@
     </div>
 </div>
 <div class="content">
-    <h1>Welcome to APU Store</h1>
-    <p>Browse and purchase APU-branded accessories, clothing, or stationary. We offer free shipping for order(s) above RM100. Items will be shipped on the same day if purchased before 10:00 a.m.</p>
+    <div class="home-page">
+        <h1>Welcome to APU Store</h1>
+        <p>Browse and purchase APU-branded accessories, clothing, or stationary. We offer free shipping for order(s) above RM100. Items will be shipped on the same day if purchased before 10:00 a.m.</p>
+    </div>
 </div>
 <?php require_once($root . 'templates/footer.php'); ?>
