@@ -25,7 +25,7 @@
             </div>
             <a href="/login">Back to Login</a>
             <div>
-                <input class="submit" type="submit" value="Send Email">
+                <input class="submit" type="submit" value="Send Link">
             </div>
         </form>
     </div>
