@@ -1,7 +1,7 @@
 <?php require_once($root . 'templates/header.php'); ?>
 <div class="contact-container">
     <div class="contact-form">
-    <h2>Send us a message</h2>
+    <h2>Leave us a message</h2>
     <form action="contact" method="#">
         <label for="formName">Name</label>
         <input class="input" type="text" id="formName" name="name" required>

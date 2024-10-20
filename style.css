@@ -1,3 +1,62 @@
+/* Global fonts override */
+@font-face {
+    font-family: 'SF Pro Regular';
+    src: url('/src/font/SF-Pro-Text-Regular.otf');
+}
+
+p, a {
+    font-family: "SF Pro Regular", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+sub, input, textarea, li {
+    font-family: "SF Pro Regular", sans-serif;
+    font-weight: normal;
+    color: #595c5f;
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'SF Pro Semibold';
+    src: url('/src/font/SF-Pro-Text-Semibold.otf');
+}
+
+h1 {
+    font-family: "SF Pro Semibold", sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: "SF Pro Semibold", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: "SF Pro Semibold", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+label {
+    font-family: "SF Pro Semibold", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+h4 {
+    font-family: "SF Pro Semibold", sans-serif;
+    font-weight: normal;
+    color: #595c5f;
+    font-size: 14px;
+}
+
+
+
+
+
 * {
     text-decoration: none;
     color: black;
