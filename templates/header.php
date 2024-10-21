@@ -15,8 +15,8 @@
                 </div>
                 <div class="header-right">
                     <div class="reglog" id="right">
-                        <a href="/login" class="desktop-page-reglog">Login</a>
-                        <a href="/register" class="desktop-page-reglog">Register</a>
+                        <a href="/login" class="desktop-page-reglog font-bold-16">Login</a>
+                        <a href="/register" class="desktop-page-reglog font-bold-16">Register</a>
                         <input type="checkbox" class="toggle-menu mobile">
                         <div class="hamburger"></div>
                         <div class="burger-menu mobile container">
@@ -34,6 +34,7 @@
                 <li><a href="/category/accessories">Accessories</a></li>
                 <li><a href="/category/clothing">Clothing</a></li>
                 <li><a href="/category/stationary">Stationary</a></li>
+                <li><a href="/cart" class="font-bold-16">Cart</a></li> <!-- [TODO] Move "Cart" text button to align right if possible --->
             </ul>
         </nav>
     </body>

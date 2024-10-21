@@ -4,13 +4,13 @@
     src: url('/src/font/SF-Pro-Text-Regular.otf');
 }
 
-p, a, .font-paragraph {
+p, a, .font-regular-16 {
     font-family: "SF Pro Regular", sans-serif;
     font-weight: normal;
     font-size: 16px;
 }
 
-sub, input, textarea, .font-subscript {
+sub, input, textarea, .font-regular-14 {
     font-family: "SF Pro Regular", sans-serif;
     font-weight: normal;
     color: #595c5f;
@@ -22,31 +22,31 @@ sub, input, textarea, .font-subscript {
     src: url('/src/font/SF-Pro-Text-Semibold.otf');
 }
 
-h1, .font-title {
+h1, .font-bold-32 {
     font-family: "SF Pro Semibold", sans-serif;
     font-weight: normal;
     font-size: 32px;
 }
 
-h2, .font-header {
+h2, .font-bold-24 {
     font-family: "SF Pro Semibold", sans-serif;
     font-weight: normal;
     font-size: 24px;
 }
 
-h3 {
+h3, .font-bold-20 {
     font-family: "SF Pro Semibold", sans-serif;
     font-weight: normal;
     font-size: 20px;
 }
 
-label, .font-paragraph-bold {
+label, .font-bold-16 {
     font-family: "SF Pro Semibold", sans-serif;
     font-weight: normal;
     font-size: 16px;
 }
 
-h4, .font-subscript-bold {
+h4, .font-bold-14 {
     font-family: "SF Pro Semibold", sans-serif;
     font-weight: normal;
     color: #595c5f;

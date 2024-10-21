@@ -34,6 +34,10 @@ switch ($path) {
         require 'public/auth/forgetpass.php';
         break;
 
+    case '/cart':
+        require 'public/journey/cart.php';
+        break;
+
     case '/category/accessories':
         require 'public/category/accessories.php';
         break;
