@@ -18,7 +18,7 @@
 				</div>
 				<hr>
 				<div class="product-desc">
-					<p>Unleash your creativity and stay organized with APU Book™. The perfect companion for students who loves to jot down thoughts, ideas, and dreams. This notebook is as good for the planet as it is for your mind.</p>
+					<p>The perfect companion for students who loves to jot down thoughts, ideas, and dreams. This notebook is as good for the planet as it is for your mind. Paper is made using 80% recycled fiber and pulp.</p>
 				</div>
 			</a>
 		</div>
@@ -32,7 +32,7 @@
 				</div>
 				<hr>
 				<div class="product-desc">
-					<p>Be efficient with APU Calculator™. The perfect tool for students who require a maths companion. This calculator not only helps you crunch numbers but also supports eco-friendly practices.</p>
+					<p>The perfect tool for students. This calculator not only helps you crunch numbers but also supports eco-friendly practices. Casing is made using recycled plastic bottles sourced responsibly.</p>
 				</div>
 			</a>
 		</div>
@@ -46,7 +46,7 @@
 				</div>
 				<hr>
 				<div class="product-desc">
-					<p>Elevate your note-taking game with APU Pen™. Designed specifically for modern university student. Manufactured with sustainable materials, this pen delivers a smooth, reliable writing experience at the same time reflects your commitment to the planet.</p>
+					<p>Manufactured with sustainable materials, this pen delivers a smooth and reliable writing experience. Body is made using recycled plastic sourced sustainably from landfills.</p>
 				</div>
 			</a>
 		</div>

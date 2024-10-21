@@ -18,7 +18,7 @@
 				</div>
 				<hr>
 				<div class="product-desc">
-					<p>Step out in style with APU Hat™. Designed for students who want to look good while making a positive impact on the planet. Perfect for outdoor adventures, casual outings, or simply keeping the sun at bay. Hat is made using 80% recycled materials.</p>
+					<p>Designed for students who want to look good while making a positive impact on the planet. Perfect for outdoor adventures, casual outings, or simply keeping the sun at bay. Made using eco-friendly materials.</p>
 				</div>
 			</a>
 		</div>
@@ -32,7 +32,7 @@
 				</div>
 				<hr>
 				<div class="product-desc">
-					<p>Elevate your style with APU Neck Tie™. Whether for a formal event or a special occasion, this tie adds a touch of class while promoting sustainable practices. Material is made using 70% recycled fabrics sourced from local farmers.</p>
+					<p>Whether for a formal event or a special occasion, this tie adds a touch of class while promoting sustainable practices. Material is made using 70% recycled fabrics sourced from local farmers.</p>
 				</div>
 			</a>
 		</div>
@@ -46,7 +46,7 @@
 			</div>
 				<hr>
 				<div class="product-desc">
-					<p>Experience ultimate comfort and style with APU T-Shirt™. Designed for students who value fashion and sustainability. Perfect for everyday wear, this versatile tee is a must-have for any wardrobe. T-Shirt material is made using sustainably sourced cotton.</p>
+					<p>Designed for students who value fashion and sustainability. Perfect for everyday wear, this versatile tee is a must-have for any wardrobe. T-Shirt material is made using sustainably sourced cotton.</p>
 				</div>
 			</a>
 		</div>
