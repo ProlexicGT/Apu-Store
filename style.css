@@ -294,6 +294,7 @@ footer ul li a {
     background-color: white;
     height: 80%;
     width: 75%;
+    min-height: 600px;
     position: absolute;
     margin: auto;
     top: 0;
@@ -1361,4 +1362,41 @@ textarea {
 
 .home-page h1, p {
     margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 1111px) {
+    .mobile-auth {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .float-left {
+        display: none;
+    }
+    
+    .floating {
+        width: 50%;
+        min-width: 350px;
+        max-height: 600px;
+        min-height: 600px;
+    }
+
+    .float-right {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .mobile-auth-input {
+        min-width: 80%;
+    }
+
+    .mobile-auth-submit {
+        min-width: 100px;
+    }
+
+    .forget-pass-title {
+        text-wrap: wrap;
+        margin: 0 auto;
+    }
 }
