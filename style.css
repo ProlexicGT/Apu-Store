@@ -1228,7 +1228,7 @@ textarea {
     }
 
     .content {
-        padding: 10px 20px;
+        padding: 40px 20px;
     }
 
     .content p {
@@ -1308,10 +1308,24 @@ textarea {
 .contact-form, .contact-desc {
     flex: 1;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-address, .contact-phone, .contact-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-form h2, .contact-desc h2 {
     margin-bottom: 40px;
+}
+
+.contact-form form {
+    max-width: 400px;
 }
 
 .contact-form .submit {
@@ -1319,7 +1333,8 @@ textarea {
 }
 
 .contact-desc p {
-    width: 60%;
+    max-width: 300px;
+    width: 100%;
     margin-bottom: 40px;
 }
 
