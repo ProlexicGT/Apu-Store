@@ -74,7 +74,7 @@
         </div>
         <div class="checkout-total container">
             <div class="checkout-right">
-                <input type="submit" class="payment-button" value="Pay" />
+                <input type="submit" class="payment-button font-regular-16" value="Pay" />
             </div>
         </div>
     </div>

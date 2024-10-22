@@ -668,6 +668,11 @@ textarea {
     width: 100%;
 }
 
+.shopping-cart {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
 .product-page-nav-view-cart {
     display: flex;
 }
@@ -913,8 +918,9 @@ textarea {
 }
 
 .checkout-right {
-    bottom: 5%;
     position: absolute;
+    margin-bottom: 60px;
+    bottom: 5%;
     right: 3%;
 }
 
@@ -934,7 +940,8 @@ textarea {
 } */
 
 .payment-form {
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 120px;
     text-align: left;
 }
 

@@ -11,7 +11,7 @@
         </div>
         <div class="cart-list container">
             <div class="container">
-                <div id="cart-container">
+                <div id="cart-container" class="shopping-cart">
                     <!-- Cart items will be added here --->
                 </div>
             </div>

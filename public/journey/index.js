@@ -62,11 +62,20 @@ function FetchProducts() {
 function LoadCart() {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     const cartContainer = document.getElementById('cart-container');
+    cartContainer.innerHTML = '';
 
-    cartItems.forEach((item, index) => {
-        const newItemBox = CreateCartItem(item, index);
-        cartContainer.appendChild(newItemBox);
-    });
+    if (cartItems.length === 0) {
+        const noItemsMessage = document.createElement('h3');
+        noItemsMessage.textContent = 'You have no items in your cart.';
+
+        cartContainer.appendChild(noItemsMessage);
+    } else {
+        cartItems.forEach((item, index) => {
+            const newItemBox = CreateCartItem(item, index);
+            
+            cartContainer.appendChild(newItemBox);
+        });
+    }
 
     UpdateTotal();
     CartListeners();
@@ -91,7 +100,7 @@ function AddToCart(productId) {
     }
 
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
-    UpdateTotal();
+    LoadCart();
 }
 
 function CreateCartItem(item, index) {
@@ -149,8 +158,6 @@ function ChangeQuantity(index, change) {
     if (item) {
         item.quantity = Math.max(1, item.quantity + change);
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
-        
-        UpdateTotal();
 
         const inputBox = document.querySelectorAll('.input-box')[index];
             if (inputBox) {
@@ -161,6 +168,8 @@ function ChangeQuantity(index, change) {
             if (priceElement) {
                 priceElement.innerText = `RM ${item.price * item.quantity}`;
             }
+
+        UpdateTotal();
     }
 }
 
@@ -176,5 +185,5 @@ function RemoveItem(index) {
     cartItems.splice(index, 1);
 
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
-    location.reload();
+    LoadCart();
 }
