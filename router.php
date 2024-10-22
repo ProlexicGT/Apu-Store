@@ -38,6 +38,10 @@ switch ($path) {
         require 'public/journey/cart.php';
         break;
 
+    case '/payment':
+        require 'public/journey/payment.php';
+        break;
+
     case '/category/accessories':
         require 'public/category/accessories.php';
         break;

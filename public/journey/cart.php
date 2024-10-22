@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="bottom-cart-list container">
-            <button>Continue Shopping</button>
+            <button>Continue shopping</button>
             <div class="checkout">
                 <span>Total Price RM x</span>
                 <button>

@@ -852,12 +852,12 @@ textarea {
     margin: auto;
 }
 
-.checkout-title ul {
+/* .checkout-title ul {
     display: flex;
     list-style: none;
     width: 93%;
     margin: 10px auto;
-}
+} */
 
 .ct1 {
     text-align: left;
@@ -868,40 +868,40 @@ textarea {
     width: 15%;
 }
 
-.checkout-picture {
+/* .checkout-picture {
     height: 70%;
     width: 15%;
     position: relative;
-}
+} */
 
-.checkout-name {
+/* .checkout-name {
     height: 70%;
     width: 40%;
     text-align: left;
     position: relative;
-}
+} */
 
-.checkout-name p {
+/* .checkout-name p {
     width: 90%;
-}
+} */
 
-.checkout-quantity {
+/* .checkout-quantity {
     height: 70%;
     width: 15%;
     position: relative;
-}
+} */
 
-.checkout-price {
+/* .checkout-price {
     height: 70%;
     width: 15%;
     position: relative;
-}
+} */
 
-.checkout-subtotal {
+/* .checkout-subtotal {
     height: 70%;
     width: 15%;
     position: relative;
-}
+} */
 
 .checkout-total {
     margin-left: auto;
@@ -917,20 +917,20 @@ textarea {
     right: 3%;
 }
 
-.checkout-total p {
+/* .checkout-total p {
     width: 120px;
     text-wrap: nowrap;
-    /* font-size: large; */
+    font-size: large;
     margin-bottom: 5px;
-}
+} */
 
-.checkout-total button {
+/* .checkout-total button {
     cursor: pointer;
     width: 120px;
     height: 50px;
-    /* font-size: larger; */
+    font-size: larger;
     all: none;
-}
+} */
 
 .payment-form {
     margin-top: 20px;

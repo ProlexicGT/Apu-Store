@@ -34,7 +34,8 @@
                 <li><a href="/category/accessories">Accessories</a></li>
                 <li><a href="/category/clothing">Clothing</a></li>
                 <li><a href="/category/stationary">Stationary</a></li>
-                <li><a href="/cart" class="font-bold-16">Cart</a></li> <!-- [TODO] Move "Cart" text button to align right if possible --->
+                <li><a href="/cart" class="font-bold-16">Cart</a></li> <!-- [TODO] Move "Cart" button to align right if possible --->
+                <li><a href="/payment" class="font-bold-16">Payment</a></li> <!-- [TODO] Remove "Payment" button after finish developing --->
             </ul>
         </nav>
     </body>
