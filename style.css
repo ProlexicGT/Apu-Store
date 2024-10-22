@@ -630,6 +630,8 @@ textarea {
 .add-to-cart-btn {
     cursor: pointer;
     padding: 15px 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: unset;
     border-radius: 15px;
     color: #212121;
@@ -1220,6 +1222,10 @@ textarea {
 @media only screen and (max-width: 1010px) {
     .item-list-preview {
         display: initial;
+    }
+
+    .add-to-cart-btn {
+        display: none;
     }
 
     .product {
