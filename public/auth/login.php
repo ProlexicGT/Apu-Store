@@ -14,7 +14,7 @@
         <a href="/"><img src="/src/img/icons8-back-100.png" alt="Back" id="back-logo"></a>
     </div>
     <div class="float-left">
-        <img src="/src/img/login_vector.png" alt="Login vector" style="width: 393px; height: 531px; position: absolute; margin: 5%; margin-left: 13%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+        <img src="/src/img/login_vector.png" alt="Login vector" style="width: 350px; height: 480px; position: absolute; margin: 5%; margin-left: 13%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
     </div>
     <div class="float-right" id="container">
         <h1>Login</h1>
