@@ -20,7 +20,7 @@
 					<div class="product-desc">
 						<p>Designed for students who value style and sustainability. Crafted from 60% recycled materials, this backpack not only looks great but also helps reduce your carbon footprint.</p>
 					</div>
-				<div.product-name-po/a>
+				</a>
 			</div>
 			<div class="product">
 				<a href="#">
