@@ -21,6 +21,7 @@
 						<p>Designed for students who want to look good while making a positive impact on the planet. Perfect for outdoor adventures, casual outings, or simply keeping the sun at bay. Made using eco-friendly materials.</p>
 					</div>
 				</a>
+				<button onclick="addToCart('Hat')">Add to Cart</button>
 			</div>
 			<div class="product">
 				<a href="#">
@@ -35,6 +36,7 @@
 						<p>Whether for a formal event or a special occasion, this tie adds a touch of class while promoting sustainable practices. Material is made using 70% recycled fabrics sourced from local farmers.</p>
 					</div>
 				</a>
+				<button onclick="addToCart('Neck Tie')">Add to Cart</button>
 			</div>
 			<div class="product">
 				<a href="#">
@@ -49,7 +51,9 @@
 						<p>Designed for students who value fashion and sustainability. Perfect for everyday wear, this versatile tee is a must-have for any wardrobe. T-Shirt material is made using sustainably sourced cotton.</p>
 					</div>
 				</a>
+				<button onclick="addToCart('T-Shirt')">Add to Cart</button>
 			</div>
 		</div>
 	</div>
+	<script src="/public/journey/index.js"></script>
 <?php require_once($root . 'templates/footer.php'); ?>

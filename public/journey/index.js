@@ -38,6 +38,11 @@ function ResetPassword(event) {
 }
 
 
+function addToCart(item) {
+    alert(item + ' has been added to your cart!');
+}
+
+
 // Cart function for cart.php
 document.addEventListener('DOMContentLoaded', function () {
     initCartFunctionality();
