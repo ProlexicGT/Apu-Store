@@ -38,9 +38,6 @@ function ResetPassword(event) {
 }
 
 
-
-
-
 // Cart function for cart.php
 let products = [];
 
@@ -49,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     LoadCart();
 });
 
+// Fetch all products from products.json in JSON format
 function FetchProducts() {
     fetch('/public/journey/products.json')
         .then(response => response.json())
@@ -59,6 +57,7 @@ function FetchProducts() {
         .catch(error => console.error('Error: ', error));
 }
 
+// Update cart item with data from Local Storage
 function LoadCart() {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     const cartContainer = document.getElementById('cart-container');
@@ -81,6 +80,7 @@ function LoadCart() {
     CartListeners();
 }
 
+// Get all the product attributes using its ID and save them into Local Storage
 function AddToCart(productId) {
     const product = products.find(p => p.id === productId);
 
@@ -96,19 +96,22 @@ function AddToCart(productId) {
     if (existingIndex !== -1) {
         cartItems[existingIndex].quantity += 1;
     } else {
-        cartItems.push({ id: product.id, name: product.name, price: product.price, quantity: 1 });
+        cartItems.push({ id: product.id, name: product.name, price: product.price, image: product.image, quantity: 1 });
     }
 
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
     LoadCart();
 }
 
+// Create a new cart item in HTML for cart.php
 function CreateCartItem(item, index) {
     const newItemBox = document.createElement('div');
 
     newItemBox.classList.add('item-box', 'container');
     newItemBox.innerHTML = `
-        <div class="cart-item-picture"></div>
+        <div class="cart-item-picture">
+            <img src="${item.image}" alt="${item.name}" />
+        </div>
         <div class="cart-item-name">
             <p class="font-bold-16">${item.name}</p>
         </div>
@@ -128,6 +131,7 @@ function CreateCartItem(item, index) {
     return newItemBox;
 }
 
+// Attach remove, plus, and minus button event listeners for each cart item
 function CartListeners() {
     document.querySelectorAll('.cart-delete-btn').forEach(button => {
         button.addEventListener('click', function() {
@@ -151,6 +155,7 @@ function CartListeners() {
     });
 }
 
+// Update cart item quantity based on index and change (either 1 or -1) parameters
 function ChangeQuantity(index, change) {
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     const item = cartItems[index];
@@ -173,6 +178,7 @@ function ChangeQuantity(index, change) {
     }
 }
 
+// Update total price with data from Local Storage
 function UpdateTotal() {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
@@ -180,6 +186,7 @@ function UpdateTotal() {
     document.getElementById('total-price').innerText = `Total: RM ${totalPrice}`;
 }
 
+// Remove cart item based on the index parameter
 function RemoveItem(index) {
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     cartItems.splice(index, 1);

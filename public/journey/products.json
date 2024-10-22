@@ -2,46 +2,55 @@
     {
         "id": 1,
         "name": "Backpack",
-        "price": 100
+        "price": 150,
+        "image": "src/store/backpack.png"
     },
     {
         "id": 2,
         "name": "Bottle",
-        "price": 25
+        "price": 25,
+        "image": "src/store/bottle.png"
     },
     {
         "id": 3,
         "name": "Tote Bag",
-        "price": 15
+        "price": 15,
+        "image": "src/store/totebag.png"
     },
     {
         "id": 4,
         "name": "Hat",
-        "price": 20
+        "price": 20,
+        "image": "src/store/hat.png"
     },
     {
         "id": 5,
         "name": "Neck Tie",
-        "price": 30
+        "price": 30,
+        "image": "src/store/necktie.png"
     },
     {
         "id": 6,
         "name": "T-Shirt",
-        "price": 50
+        "price": 60,
+        "image": "src/store/tshirt.png"
     },
     {
         "id": 7,
         "name": "Book",
-        "price": 10
+        "price": 10,
+        "image": "src/store/book.png"
     },
     {
         "id": 8,
         "name": "Calculator",
-        "price": 30
+        "price": 45,
+        "image": "src/store/calculator.png"
     },
     {
         "id": 9,
         "name": "Pen",
-        "price": 10
+        "price": 5,
+        "image": "src/store/pen.png"
     }
 ]

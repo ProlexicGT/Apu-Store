@@ -741,6 +741,11 @@ textarea {
     position: relative;
 }
 
+.cart-item-picture img {
+    width: auto;
+    height: auto;
+}
+
 .cart-item-name {
     height: 100%;
     width: 40%;
