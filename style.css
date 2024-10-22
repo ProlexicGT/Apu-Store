@@ -913,6 +913,7 @@ textarea {
 }
 
 .checkout-right {
+    bottom: 5%;
     position: absolute;
     right: 3%;
 }
@@ -1328,7 +1329,7 @@ textarea {
     .float-left {
         display: none;
     }
-    
+
     .floating {
         width: 50%;
         min-width: 350px;
@@ -1352,5 +1353,43 @@ textarea {
     .forget-pass-title {
         text-wrap: wrap;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .payment-page-name .payment-page-left {
+        margin-top: 15px;
+    }
+    
+    .payment-page-email .payment-page-left {
+        margin-top: 15px;
+    }
+    
+    .payment-page-phone .payment-page-left {
+        margin-top: 5px;
+    }
+    
+    .payment-page-address .payment-page-left {
+        margin-top: 13px;
+    }
+    
+    .payment-page-expiry-date .payment-page-left {
+        margin-top: 7px;
+    }
+    
+    .payment-page-cvv .payment-page-left {
+        margin-top: 7px;
+    }
+
+    .payment-form label {
+        margin-left: 0%;
+    }
+
+    .payment-page-email input {
+        width: 230px;
+    }
+
+    .payment-form .payment-page-left {
+        margin-left: 5%;
     }
 }
