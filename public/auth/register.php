@@ -47,6 +47,16 @@
                         </div>
                     </div>
                     <br>
+                    <?php
+                    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                        if (count($errors)>0) {
+                            foreach($errors as $error) {
+                                echo "<p style='color: red; margin-bottom: 0; font-size: 12px;'>" . $error . "</p>";
+                            }
+                        }
+                    }
+                    ?>
+                    <br>
                     <div>
                         <input class="submit" type="submit" value="Register">
                     </div>
