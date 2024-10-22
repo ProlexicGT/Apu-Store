@@ -21,7 +21,7 @@
 						<p>The perfect companion for students who loves to jot down thoughts, ideas, and dreams. This notebook is as good for the planet as it is for your mind. Paper is made using 80% recycled fiber and pulp.</p>
 					</div>
 				</a>
-				<button onclick="addToCart(7)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
+				<button onclick="AddToCart(7)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
 			</div>
 			<div class="product">
 				<a href="#">
@@ -36,7 +36,7 @@
 						<p>The perfect tool for students. This calculator not only helps you crunch numbers but also supports eco-friendly practices. Casing is made using recycled plastic bottles sourced responsibly.</p>
 					</div>
 				</a>
-				<button onclick="addToCart(8)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
+				<button onclick="AddToCart(8)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
 			</div>
 			<div class="product">
 				<a href="#">
@@ -51,7 +51,7 @@
 						<p>Manufactured with sustainable materials, this pen delivers a smooth and reliable writing experience. Body is made using recycled plastic sourced sustainably from landfills.</p>
 					</div>
 				</a>
-				<button onclick="addToCart(9)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
+				<button onclick="AddToCart(9)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
 			</div>
 		</div>
 	</div>

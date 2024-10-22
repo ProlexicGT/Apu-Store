@@ -41,9 +41,15 @@ function ResetPassword(event) {
 
 
 
+// Cart function for cart.php
 let products = [];
 
 document.addEventListener('DOMContentLoaded', () => {
+    FetchProducts();
+    LoadCart();
+});
+
+function FetchProducts() {
     fetch('/public/journey/products.json')
         .then(response => response.json())
         .then(data => {
@@ -51,94 +57,124 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(products);
         })
         .catch(error => console.error('Error: ', error));
-});
+}
 
+function LoadCart() {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    const cartContainer = document.getElementById('cart-container');
 
-function addToCart(productId) {
+    cartItems.forEach((item, index) => {
+        const newItemBox = CreateCartItem(item, index);
+        cartContainer.appendChild(newItemBox);
+    });
+
+    UpdateTotal();
+    CartListeners();
+}
+
+function AddToCart(productId) {
     const product = products.find(p => p.id === productId);
-    if (!product) return alert('Error: Product not found.');
 
-    alert(product.name + " have been added to your cart!");
+    if (!product) {
+        return alert('Error: Product not found.');
+    }
+
+    alert(`Added 1 ${product.name} to your cart`);
 
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    const existingIndex = cartItems.findIndex(item => item.id === product.id);
 
-    const existingItemIndex = cartItems.findIndex(item => item.id === product.id);
-
-    if (existingItemIndex !== -1) {
-        cartItems[existingItemIndex].quantity += 1;
+    if (existingIndex !== -1) {
+        cartItems[existingIndex].quantity += 1;
     } else {
         cartItems.push({ id: product.id, name: product.name, price: product.price, quantity: 1 });
     }
 
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
-
-    updateTotalPrice();
+    UpdateTotal();
 }
 
+function CreateCartItem(item, index) {
+    const newItemBox = document.createElement('div');
 
-function updateTotalPrice() {
+    newItemBox.classList.add('item-box', 'container');
+    newItemBox.innerHTML = `
+        <div class="cart-item-picture"></div>
+        <div class="cart-item-name">
+            <p class="font-bold-16">${item.name}</p>
+        </div>
+        <div class="cart-item-quantity">
+            <div class="quantity">
+                <button class="minus" aria-label="Decrease" data-index="${index}">&minus;</button>
+                <input type="number" class="input-box" value="${item.quantity}" min="1" readonly />
+                <button class="plus" aria-label="Increase" data-index="${index}">&plus;</button>
+            </div>
+        </div>
+        <div class="cart-item-price">
+            <p>RM ${item.price * item.quantity}</p>
+        </div>
+        <button class="cart-delete-btn font-regular-16" data-index="${index}">Remove</button>
+    `;
+
+    return newItemBox;
+}
+
+function CartListeners() {
+    document.querySelectorAll('.cart-delete-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const index = this.getAttribute('data-index');
+            RemoveItem(index);
+        });
+    });
+
+    document.querySelectorAll('.plus').forEach(button => {
+        button.addEventListener('click', function() {
+            const index = this.getAttribute('data-index');
+            ChangeQuantity(index, 1);
+        });
+    });
+
+    document.querySelectorAll('.minus').forEach(button => {
+        button.addEventListener('click', function() {
+            const index = this.getAttribute('data-index');
+            ChangeQuantity(index, -1);
+        });
+    });
+}
+
+function ChangeQuantity(index, change) {
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    const item = cartItems[index];
+
+    if (item) {
+        item.quantity = Math.max(1, item.quantity + change);
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        
+        UpdateTotal();
+
+        const inputBox = document.querySelectorAll('.input-box')[index];
+            if (inputBox) {
+                inputBox.value = item.quantity;
+            }
+
+        const priceElement = document.querySelectorAll('.cart-item-price p')[index];
+            if (priceElement) {
+                priceElement.innerText = `RM ${item.price * item.quantity}`;
+            }
+    }
+}
+
+function UpdateTotal() {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-    const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
+    const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+    
     document.getElementById('total-price').innerText = `Total: RM ${totalPrice}`;
 }
 
+function RemoveItem(index) {
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    cartItems.splice(index, 1);
 
-
-
-
-// [Legacy] Cart function for cart.php
-document.addEventListener('DOMContentLoaded', function () {
-    initCartFunctionality();
-});
-
-function initCartFunctionality() {
-    const quantityContainers = document.querySelectorAll(".quantity");
-
-    quantityContainers.forEach(container => {
-        const minusBtn = container.querySelector(".minus");
-        const plusBtn = container.querySelector(".plus");
-        const inputBox = container.querySelector(".input-box");
-
-        updateButtonStates();
-
-        container.addEventListener("click", handleButtonClick);
-        inputBox.addEventListener("input", handleQuantityChange);
-
-        function updateButtonStates() {
-            const value = parseInt(inputBox.value);
-            minusBtn.disabled = value <= 1;
-            plusBtn.disabled = value >= parseInt(inputBox.max);
-        }
-
-        function handleButtonClick(event) {
-            if (event.target.classList.contains("minus")) {
-                decreaseValue();
-            } else if (event.target.classList.contains("plus")) {
-                increaseValue();
-            }
-        }
-
-        function decreaseValue() {
-            let value = parseInt(inputBox.value);
-            value = isNaN(value) ? 1 : Math.max(value - 1, 1);
-            inputBox.value = value;
-            updateButtonStates();
-            handleQuantityChange();
-        }
-
-        function increaseValue() {
-            let value = parseInt(inputBox.value);
-            value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.max));
-            inputBox.value = value;
-            updateButtonStates();
-            handleQuantityChange();
-        }
-
-        function handleQuantityChange() {
-            let value = parseInt(inputBox.value);
-            value = isNaN(value) ? 1 : value;
-
-            console.log("Quantity changed:", value);
-        }
-    });
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    location.reload();
 }

@@ -21,7 +21,7 @@
 						<p>Designed for students who want to look good while making a positive impact on the planet. Perfect for outdoor adventures, casual outings, or simply keeping the sun at bay. Made using eco-friendly materials.</p>
 					</div>
 				</a>
-				<button onclick="addToCart(4)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
+				<button onclick="AddToCart(4)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
 			</div>
 			<div class="product">
 				<a href="#">
@@ -36,7 +36,7 @@
 						<p>Whether for a formal event or a special occasion, this tie adds a touch of class while promoting sustainable practices. Material is made using 70% recycled fabrics sourced from local farmers.</p>
 					</div>
 				</a>
-				<button onclick="addToCart(5)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
+				<button onclick="AddToCart(5)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
 			</div>
 			<div class="product">
 				<a href="#">
@@ -51,7 +51,7 @@
 						<p>Designed for students who value fashion and sustainability. Perfect for everyday wear, this versatile tee is a must-have for any wardrobe. T-Shirt material is made using sustainably sourced cotton.</p>
 					</div>
 				</a>
-				<button onclick="addToCart(6)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
+				<button onclick="AddToCart(6)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
 			</div>
 		</div>
 	</div>
