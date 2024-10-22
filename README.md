@@ -13,5 +13,5 @@ _Goal 12 | Department of Economic and Social Affairs._ (2023). Un.org. https://s
 <br>
 
 <p align="center">
-  Developed by <a href="https://github.com/ProlexicGT">Karlson</a>, <a href="https://github.com/nothussainrana">Hussain</a>, and <a href="https://github.com/yewshanooi">Yew Shan</a>
+  Developed by <a href="https://github.com/ProlexicGT">Karlson</a>, <a href="https://github.com/nothussainrana">Hussain</a>, <a href="https://github.com/yewshanooi">Yew Shan</a>, Pavin, and Ahmad
 </p>
