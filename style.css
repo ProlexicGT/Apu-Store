@@ -1,4 +1,4 @@
-/* Global fonts override */
+/* Custom Fonts START */
 @font-face {
     font-family: 'SF Pro Regular';
     src: url('/src/font/SF-Pro-Text-Regular.otf');
@@ -52,9 +52,7 @@ h4, .font-bold-14 {
     color: #595c5f;
     font-size: 14px;
 }
-
-
-
+/* Custom Fonts END */
 
 
 * {
@@ -68,9 +66,8 @@ h4, .font-bold-14 {
 hr {
     border: none;
     height: 1px;
-    /* Set the hr color */
-    color: #333; /* old IE */
-    background-color: #333; /* Modern Browsers */
+    color: #333;
+    background-color: #333;
 }
 
 #container {
@@ -394,7 +391,7 @@ select,
 }
 
 textarea {
-    resize: vertical; /* Allow vertical resizing only */
+    resize: vertical;
     height: auto;
     min-height: 135px;
 }
@@ -773,7 +770,7 @@ textarea {
 }
 
 .cart-delete-btn {
-    height: 101%; /* [TODO] Height must be 101% to make it symmetrical */
+    height: 101%; /* [Note] Height must be 101% to make it symmetrical */
     width: 15%;
     cursor: pointer;
     /* font-size: large; */
