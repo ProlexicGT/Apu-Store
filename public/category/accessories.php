@@ -21,7 +21,7 @@
 						<p>Designed for students who value style and sustainability. Crafted from 60% recycled materials, this backpack not only looks great but also helps reduce your carbon footprint.</p>
 					</div>
 				</a>
-				<button onclick="addToCart('Backpack')">Add to Cart</button>
+				<button onclick="addToCart(1)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
 			</div>
 			<div class="product">
 				<a href="#">
@@ -36,7 +36,7 @@
 						<p>Perfect companion for every adventure, whether you are hitting the gym, heading to class, or enjoying a weekend getaway. Designed using non toxic and BPA-free materials for long term usage.</p>
 					</div>
 				</a>
-				<button onclick="addToCart('Bottle')">Add to Cart</button>
+				<button onclick="addToCart(2)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
 			</div>
 			<div class="product">
 				<a href="#">
@@ -51,7 +51,7 @@
 						<p>Perfect for university, shopping, or a day at the beach. This versatile bag combines functionality with a commitment to the environment. Canvas material is made using sustainably sourced cotton.</p>
 					</div>
 				</a>
-				<button onclick="addToCart('Tote Bag')">Add to Cart</button>
+				<button onclick="addToCart(3)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
 			</div>
 		</div>
 	</div>

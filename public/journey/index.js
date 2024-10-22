@@ -38,12 +38,55 @@ function ResetPassword(event) {
 }
 
 
-function addToCart(item) {
-    alert(item + ' has been added to your cart!');
+
+
+
+let products = [];
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('/public/journey/products.json')
+        .then(response => response.json())
+        .then(data => {
+            products = data;
+            console.log(products);
+        })
+        .catch(error => console.error('Error: ', error));
+});
+
+
+function addToCart(productId) {
+    const product = products.find(p => p.id === productId);
+    if (!product) return alert('Error: Product not found.');
+
+    alert(product.name + " have been added to your cart!");
+
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    const existingItemIndex = cartItems.findIndex(item => item.id === product.id);
+
+    if (existingItemIndex !== -1) {
+        cartItems[existingItemIndex].quantity += 1;
+    } else {
+        cartItems.push({ id: product.id, name: product.name, price: product.price, quantity: 1 });
+    }
+
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+    updateTotalPrice();
 }
 
 
-// Cart function for cart.php
+function updateTotalPrice() {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
+    document.getElementById('total-price').innerText = `Total: RM ${totalPrice}`;
+}
+
+
+
+
+
+// [Legacy] Cart function for cart.php
 document.addEventListener('DOMContentLoaded', function () {
     initCartFunctionality();
 });

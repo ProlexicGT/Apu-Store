@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Backpack",
+        "price": 100
+    },
+    {
+        "id": 2,
+        "name": "Bottle",
+        "price": 25
+    },
+    {
+        "id": 3,
+        "name": "Tote Bag",
+        "price": 15
+    },
+    {
+        "id": 4,
+        "name": "Hat",
+        "price": 20
+    },
+    {
+        "id": 5,
+        "name": "Neck Tie",
+        "price": 30
+    },
+    {
+        "id": 6,
+        "name": "T-Shirt",
+        "price": 50
+    },
+    {
+        "id": 7,
+        "name": "Book",
+        "price": 10
+    },
+    {
+        "id": 8,
+        "name": "Calculator",
+        "price": 30
+    },
+    {
+        "id": 9,
+        "name": "Pen",
+        "price": 10
+    }
+]

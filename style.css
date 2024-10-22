@@ -754,8 +754,8 @@ textarea {
     position: relative;
 }
 
-#cart-delete-btn {
-    height: 100%;
+.cart-delete-btn {
+    height: 101%; /* [TODO] Height must be 101% to make it symmetrical */
     width: 15%;
     cursor: pointer;
     /* font-size: large; */
@@ -764,7 +764,7 @@ textarea {
     transition: all 200ms;
 }
 
-#cart-delete-btn:hover {
+.cart-delete-btn:hover {
     background-color: rgb(244, 62, 62);
     color: white;
     transition: color 300ms ease, background-color 300ms ease-in-out;
