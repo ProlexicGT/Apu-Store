@@ -57,11 +57,6 @@
                             <p>Checkout</p>
                         </span>
                     </div>
-                    <div>
-                        <span>
-                            <p>Thank You</p>
-                        </span>
-                    </div>
                 </button>
             </div>
         </div>
