@@ -14,7 +14,7 @@
         <a href="/"><img src="/src/img/icons8-back-100.png" alt="Back" id="back-logo"></a>
     </div>
     <div class="float-left">
-        <img src="/src/img/register_vector.png" alt="Register vector" style="width: 629px; height: 576px; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+        <img src="/src/img/register_vector.png" alt="Register vector" style="width: 464px; height: 511px; position: abolute; margin: 5%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
     </div>
     <div class="float-right" id="container">
         <h1 id="register-title">Register</h1>
