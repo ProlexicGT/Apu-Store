@@ -5,13 +5,13 @@
 }
 
 p, a, .font-regular-16 {
-    font-family: "SF Pro Regular", sans-serif;
+    font-family: "SF Pro Regular", Arial, sans-serif;
     font-weight: normal;
     font-size: 16px;
 }
 
 sub, input, textarea, .font-regular-14 {
-    font-family: "SF Pro Regular", sans-serif;
+    font-family: "SF Pro Regular", Arial, sans-serif;
     font-weight: normal;
     color: #595c5f;
     font-size: 14px;
@@ -23,31 +23,31 @@ sub, input, textarea, .font-regular-14 {
 }
 
 h1, .font-bold-32 {
-    font-family: "SF Pro Semibold", sans-serif;
+    font-family: "SF Pro Semibold", Arial, sans-serif;
     font-weight: normal;
     font-size: 32px;
 }
 
 h2, .font-bold-24 {
-    font-family: "SF Pro Semibold", sans-serif;
+    font-family: "SF Pro Semibold", Arial, sans-serif;
     font-weight: normal;
     font-size: 24px;
 }
 
 h3, .font-bold-20 {
-    font-family: "SF Pro Semibold", sans-serif;
+    font-family: "SF Pro Semibold", Arial, sans-serif;
     font-weight: normal;
     font-size: 20px;
 }
 
 label, .font-bold-16 {
-    font-family: "SF Pro Semibold", sans-serif;
+    font-family: "SF Pro Semibold", Arial, sans-serif;
     font-weight: normal;
     font-size: 16px;
 }
 
 h4, .font-bold-14 {
-    font-family: "SF Pro Semibold", sans-serif;
+    font-family: "SF Pro Semibold", Arial, sans-serif;
     font-weight: normal;
     color: #595c5f;
     font-size: 14px;
@@ -60,7 +60,6 @@ h4, .font-bold-14 {
     color: black;
     margin: 0;
     padding: 0;
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 hr {
@@ -71,12 +70,10 @@ hr {
 }
 
 #container {
-    /* border: solid 2px #000; */
     position: relative;
 }
 
 .container {
-    /* border: solid 2px #000; */
     position: relative;
 }
 
@@ -118,7 +115,6 @@ hr {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: blue; */
 }
 
 .apu_store_logo {
@@ -127,7 +123,6 @@ hr {
 
 .header-right {
     background-color: lightgray;
-    /* width: 100%; */
 }
 
 .reglog {
@@ -143,11 +138,9 @@ hr {
 .reglog a {
     margin: 10px;
     padding: 10px;
-    /* border: solid 2px #000; */
     text-decoration: none;
     color: black;
     border-radius: 6px;
-    /* font-size: 23px; */
 }
 
 .top-nav-bar {
@@ -218,26 +211,22 @@ hr {
     animation-delay: calc(20s / 3 * (3 - 1) * -1);
     width: 960px;
     height: 230px;
-    /* display: none; */
 }
 
 .slide-image2 {
     animation-delay: calc(20s / 3 * (3 - 2) * -1);
     width: 960px;
     height: 230px;
-    /* display: none; */
 }
 
 .slide-image3 {
     animation-delay: calc(20s / 3 * (3 - 3) * -1);
     width: 960px;
     height: 230px;
-    /* display: none; */
 }
 
 .content {
     text-align: center;
-    /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
     padding: 40px;
     min-height: 500px;
     background-color: rgb(245, 245, 245);
@@ -251,7 +240,7 @@ hr {
 }
 
 .content img {
-    max-width: 80%; /* Image will resize properly on smaller display if max-width is 80% apparently?! */
+    max-width: 80%; /* Image will resize properly on smaller display if max-width is 80% */
     height: auto;
 }
 
@@ -340,7 +329,6 @@ footer ul li a {
 }
 
 .float-right form div {
-    /* font-size: 20px; */
     margin-bottom: 5%;
 }
 
@@ -355,7 +343,6 @@ footer ul li a {
 .pass div a {
     text-decoration: none;
     color: black;
-    /* font-size: small; */
 }
 
 input[type="text"],
@@ -405,7 +392,6 @@ textarea {
     border-radius: 4px;
     cursor: pointer;
     transition: transform 0.4s;
-    /* font-size: medium; */
 }
 
 .submit:hover {
@@ -482,16 +468,11 @@ textarea {
     border-radius: 4px;
     background-color: black;
     color: white;
-    /* font-weight: bold; */
 }
 
 .enter-email-layout div input[type="submit"]:hover {
     background-color: rgb(71, 71, 71);
 }
-
-/* .enter-email label {
-    font-size: larger;
-} */
 
 .enter-email input {
     width: 50%;
@@ -547,7 +528,6 @@ textarea {
 }
 
 .product div {
-    /* padding-bottom: 50%; */
     display: flex;
     width: 100%;
     height: 50%;
@@ -641,8 +621,6 @@ textarea {
     z-index: 1;
     background: #e8e8e8;
     position: relative;
-    /* font-weight: 1000; */
-    /* font-size: 15px; */
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms;
@@ -770,10 +748,9 @@ textarea {
 }
 
 .cart-delete-btn {
-    height: 101%; /* [Note] Height must be 101% to make it symmetrical */
+    height: 101%; /* height must be 101% to make it symmetrical */
     width: 15%;
     cursor: pointer;
-    /* font-size: large; */
     border: 1px solid black;
     border-radius: none;
     transition: all 200ms;
@@ -805,7 +782,6 @@ textarea {
     color: black;
     border: none;
     cursor: pointer;
-    /* font-size: 20px; */
     width: 30px;
     height: auto;
     text-align: center;
@@ -817,11 +793,10 @@ textarea {
     text-align: center;
     border: none;
     padding: 8px 10px;
-    /* font-size: 16px; */
     outline: none;
 }
 
-/* Hide the number input spin buttons */
+/* hide the number input spin buttons */
 .input-box::-webkit-inner-spin-button,
 .input-box::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -867,13 +842,6 @@ textarea {
     margin: auto;
 }
 
-/* .checkout-title ul {
-    display: flex;
-    list-style: none;
-    width: 93%;
-    margin: 10px auto;
-} */
-
 .ct1 {
     text-align: left;
     width: 55%;
@@ -882,41 +850,6 @@ textarea {
 .ct {
     width: 15%;
 }
-
-/* .checkout-picture {
-    height: 70%;
-    width: 15%;
-    position: relative;
-} */
-
-/* .checkout-name {
-    height: 70%;
-    width: 40%;
-    text-align: left;
-    position: relative;
-} */
-
-/* .checkout-name p {
-    width: 90%;
-} */
-
-/* .checkout-quantity {
-    height: 70%;
-    width: 15%;
-    position: relative;
-} */
-
-/* .checkout-price {
-    height: 70%;
-    width: 15%;
-    position: relative;
-} */
-
-/* .checkout-subtotal {
-    height: 70%;
-    width: 15%;
-    position: relative;
-} */
 
 .checkout-total {
     margin-left: auto;
@@ -933,21 +866,6 @@ textarea {
     bottom: 5%;
     right: 3%;
 }
-
-/* .checkout-total p {
-    width: 120px;
-    text-wrap: nowrap;
-    font-size: large;
-    margin-bottom: 5px;
-} */
-
-/* .checkout-total button {
-    cursor: pointer;
-    width: 120px;
-    height: 50px;
-    font-size: larger;
-    all: none;
-} */
 
 .payment-form {
     margin-top: 60px;
@@ -1054,7 +972,6 @@ textarea {
     background-color: white;
     transition: all 0.2s ease-in-out 0ms;
     user-select: none;
-    /* font-family: "Poppins", sans-serif; */
 }
 
 .payment-button:hover {
@@ -1182,7 +1099,6 @@ textarea {
     }
 
     .burger-menu li a, .burger-menu li a:hover {
-        /* font-size: 24px; */
         box-shadow: - 1px - rgba(255,255,255,0.1)
         inset;
     }
@@ -1276,6 +1192,11 @@ textarea {
         overflow: hidden;
         text-align: start;
     }
+
+    .about-table td {
+        display: inline-block;
+        width: 50%;
+    }
 }
 
 .contact-container {
@@ -1334,6 +1255,26 @@ textarea {
 
 .about-us h2, h4, p {
     margin-bottom: 25px;
+}
+
+.about-content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-table {
+    width: 50%;
+    table-layout: auto;
+    margin: 0 auto;
+}
+
+.about-table td {
+    padding: 10px;
+}
+
+.about-table img {
+    width: 100px;
+    height: 100px;
 }
 
 .home-page h1, p {

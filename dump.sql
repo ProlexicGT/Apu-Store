@@ -1,7 +1,9 @@
 CREATE DATABASE APUSTORE;
+USE APUSTORE;
+
 CREATE TABLE USERS (
-    email nvarchar(26) primary key,
-    password nvarchar(20),
-    firstname nvarchar(26),
-    lastname nvarchar(26)
+    email VARCHAR(26) PRIMARY KEY,
+    password VARCHAR(20),
+    firstname VARCHAR(26),
+    lastname VARCHAR(26)
 );
