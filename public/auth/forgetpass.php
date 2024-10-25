@@ -22,7 +22,7 @@
                     <input class="input mobile-auth-input" type="text" name="email" id="email" required>
                 </div>
                 <a href="/login">Back to Login</a>
-                <div>
+                <div class="forget-pass-submit-btn">
                     <input class="submit mobile-auth-submit" type="submit" value="Send Link">
                 </div>
             </form>

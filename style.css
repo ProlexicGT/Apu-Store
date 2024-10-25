@@ -1316,6 +1316,26 @@ textarea {
         text-wrap: wrap;
         margin: 0 auto;
     }
+
+    .cart-item-quantity {
+        display: none;
+    }
+
+    .cart-item-price {
+        width: 25%;
+    }
+
+    .cart-delete-btn {
+        width: 20%;
+    }
+
+    .cart-item-name p {
+        width: 80%;
+    }
+
+    .cart-item-picture img {
+        margin: 30px auto;
+    }
 }
 
 @media only screen and (max-width: 780px) {
@@ -1353,5 +1373,34 @@ textarea {
 
     .payment-form .payment-page-left {
         margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .enter-email-layout form {
+        width: 90%;
+        margin: auto;
+    }
+
+    .forget-pass-title {
+        left: 35%;
+        right: 40%;
+        margin-top: 3%;
+        position: absolute;
+    }
+
+    .forget-pass-submit-btn {
+        position: absolute;
+        right: 10px;
+    }
+
+    .mobile-auth-input {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .bottom-cart-list button {
+        width: 100px;
     }
 }
