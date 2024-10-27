@@ -9,7 +9,7 @@
 		</div>
 		<div class="item-list-preview" id="container">
 			<div class="product">
-				<a href="#">
+				<a href="/product/7">
 					<div class="product-name-pos">
 						<img src="/src/store/book.png" alt="Book" class="product-image">
 						<div class="product-name">
@@ -21,10 +21,9 @@
 						<p>The perfect companion for students who loves to jot down thoughts, ideas, and dreams. This notebook is as good for the planet as it is for your mind. Paper is made using 80% recycled fiber and pulp.</p>
 					</div>
 				</a>
-				<button onclick="AddToCart(7)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
 			</div>
 			<div class="product">
-				<a href="#">
+				<a href="/product/8">
 					<div class="product-name-pos">
 						<img src="/src/store/calculator.png" alt="Calculator" class="product-image">
 						<div class="product-name">
@@ -36,10 +35,9 @@
 						<p>The perfect tool for students. This calculator not only helps you crunch numbers but also supports eco-friendly practices. Casing is made using recycled plastic bottles sourced responsibly.</p>
 					</div>
 				</a>
-				<button onclick="AddToCart(8)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
 			</div>
 			<div class="product">
-				<a href="#">
+				<a href="/product/9">
 					<div class="product-name-pos">
 						<img src="/src/store/pen.png" alt="Pen" class="product-image">
 						<div class="product-name">
@@ -51,7 +49,6 @@
 						<p>Manufactured with sustainable materials, this pen delivers a smooth and reliable writing experience. Body is made using recycled plastic sourced sustainably from landfills.</p>
 					</div>
 				</a>
-				<button onclick="AddToCart(9)" class="add-to-cart-btn font-regular-14">Add to Cart</button>
 			</div>
 		</div>
 	</div>

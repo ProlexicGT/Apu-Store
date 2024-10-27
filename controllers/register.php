@@ -1,4 +1,9 @@
 <?php
+if (isset($_COOKIE['user_id'])) {
+    header("Location: /", true, 302);
+    exit();
+}
+
 require 'validation.php';
 $validation = new Validation();
 $errors = [];
@@ -16,17 +21,34 @@ $validation->password($password, $errors);
 $validation->cpassword($password, $cpassword, $errors);
 
 if (count($errors) === 0) {
-    $sql = "SELECT * FROM users";
-    # need to code to add the user details to database and save cookie and redirect header to homepage.
-    $result = $mysqli->query($sql);
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            echo "Email: " . $row["email"] . " | Password: " . $row["password"] . " | First Name: " .
-                $row["firstname"] .  " | Last Name: " . $row["lastname"] . "<br>" ;
-        }
-    } else {
-        echo "0 results";
+    $sql = "INSERT INTO users (email, password, firstname, lastname) VALUES (?, ?, ?, ?)";
+    $stmt = $mysqli->prepare($sql);
+
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+    $stmt->bind_param("ssss", $email, $hashed_password, $fname, $lname);
+
+    if (!$stmt->execute()) {
+        throw new Exception($mysqli->error);
     }
+
+    $user_id = $mysqli->insert_id;
+
+    if (!$user_id) {
+        throw new Exception("Failed to get user ID");
+    }
+
+    $stmt->close();
+
+    session_start();
+    $_SESSION['user_id'] = $user_id;
+    $_SESSION['email'] = $email;
+    $_SESSION['firstname'] = $fname;
+
+    setcookie('user_id', $user_id, time() + (30 * 24 * 60 * 60), '/', '', true, true);
+
+    header("Location: /", true, 302);
+    exit();
 }
 else {
     require 'public/auth/register.php';

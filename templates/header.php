@@ -15,8 +15,15 @@
                 </div>
                 <div class="header-right">
                     <div class="reglog" id="right">
-                        <a href="/login" class="desktop-page-reglog font-bold-16">Login</a>
-                        <a href="/register" class="desktop-page-reglog font-bold-16">Register</a>
+                        <?php
+                        if (!isset($_COOKIE['user_id'])) {
+                            echo('<a href="/login" class="desktop-page-reglog font-bold-16">Login</a><a href="/register" class="desktop-page-reglog font-bold-16">Register</a>');
+                        }
+                        else {
+                            echo('<a href="/logout" class="desktop-page-reglog font-bold-16">Logout</a>');
+                        }
+                        ?>
+
                         <input type="checkbox" class="toggle-menu mobile">
                         <div class="hamburger"></div>
                         <div class="burger-menu mobile container">

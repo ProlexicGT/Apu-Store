@@ -1,27 +1,32 @@
 <?php
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-switch ($path) {
-    case '/':
+switch (true) {  // Changed to switch(true) to allow for preg_match
+    case $path === '/':
         require 'public/pages/home.php';
         break;
 
-    case '/about':
+    case $path === '/about':
         require 'public/pages/about.php';
         break;
 
-    case '/contact':
+    case $path === '/contact':
         require 'public/pages/contact.php';
         break;
 
-    case '/sizing':
+    case $path === '/sizing':
         require 'public/pages/sizing.php';
         break;
 
-    case '/login':
-        require 'public/auth/login.php';
+    case $path === '/login':
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            require 'controllers/login.php';
+        }
+        else {
+            require 'public/auth/login.php';
+        }
         break;
 
-    case '/register':
+    case $path === '/register':
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             require 'controllers/register.php';
         }
@@ -30,28 +35,36 @@ switch ($path) {
         }
         break;
 
-    case '/forgetpass':
+    case $path === '/logout':
+        require 'controllers/logout.php';
+        break;
+
+    case $path === '/forgetpass':
         require 'public/auth/forgetpass.php';
         break;
 
-    case '/cart':
+    case $path === '/cart':
         require 'public/journey/cart.php';
         break;
 
-    case '/payment':
+    case $path === '/payment':
         require 'public/journey/payment.php';
         break;
 
-    case '/category/accessories':
+    case $path === '/category/accessories':
         require 'public/category/accessories.php';
         break;
 
-    case '/category/clothing':
+    case $path === '/category/clothing':
         require 'public/category/clothing.php';
         break;
 
-    case '/category/stationary':
+    case $path === '/category/stationary':
         require 'public/category/stationary.php';
+        break;
+
+    case preg_match('/^\/product\/\d+$/', $path):
+        require 'public/products/product.php';
         break;
 
     default:

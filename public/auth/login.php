@@ -1,3 +1,9 @@
+<?php
+if (isset($_COOKIE['user_id'])) {
+    header("Location: /", true, 302);
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +24,11 @@
         </div>
         <div class="float-right" id="container">
             <h1>Login</h1>
-            <form id="loginForm" method="post" action="#" onsubmit="Login(event)">
+            <form id="loginForm" method="post" action="/login"">
                 <div>
-                    <label for="username">Username</label>
+                    <label for="username">Email</label>
                     <br>
-                    <input class="input" type="text" id="username" name="username" placeholder="Username / Email" required>
+                    <input class="input" type="text" id="username" name="email" placeholder="Email" required>
                 </div>
                 <div class="pass">
                     <label for="password">Password</label>
@@ -32,6 +38,15 @@
                         <a href="/forgetpass">Forget Password?</a>
                     </div>
                 </div>
+                <?php
+                if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                    if (count($errors)>0) {
+                        foreach($errors as $error) {
+                            echo "<p style='color: red; margin-bottom: 0; font-size: 12px;'>" . $error . "</p>";
+                        }
+                    }
+                }
+                ?>
                 <div>
                     <input class="submit" type="submit" value="Login">
                 </div>
