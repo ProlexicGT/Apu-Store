@@ -19,11 +19,20 @@
                 <div class="enter-email">
                     <label for="email"><h3>Enter your email</h3></label>
                     <br>
-                    <input class="input mobile-auth-input" type="text" name="email" id="email" required>
+                    <input class="input mobile-auth-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="text" name="email" id="email" required>
+                </div>
+                <div id="invalidEmail" style="display: none;">
+                    <p style="font-size: 14px; color: red;">Please enter a valid email</p>
+                </div>
+                <div id="emailNotEntered" style="display: none;">
+                    <p style="font-size: 14px; color: red;">Please enter your email</p>
+                </div>
+                <div id="emailSent" style="display: none;">
+                    <p style="font-size: 14px; color: green;">Please check your email</p>
                 </div>
                 <a href="/login">Back to Login</a>
                 <div class="forget-pass-submit-btn">
-                    <input class="submit mobile-auth-submit" type="submit" value="Send Link">
+                    <input onclick="displayEmailSent()" class="submit mobile-auth-submit" type="submit" value="Send Link">
                 </div>
             </form>
         </div>

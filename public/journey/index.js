@@ -33,8 +33,22 @@ function ResetPassword(event) {
     event.preventDefault();
 
     const email = document.getElementById('email').value;
+    
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    alert(`Email: ${email}`);
+    if (emailPattern.test(email)) {
+        displayEmailSent(email);
+    } else {
+        var invalidEmail = document.getElementById("invalidEmail");
+        invalidEmail.style.display = "block";
+
+        var sentEmail = document.getElementById("emailSent");
+        sentEmail.style.display = "none";
+
+        var noEmail = document.getElementById("emailNotEntered");
+        noEmail.style.display = "none";
+    }
+
 }
 
 
@@ -193,4 +207,27 @@ function RemoveItem(index) {
 
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
     LoadCart();
+}
+
+function displayEmailSent(email) {
+    if (email == null) {
+        var noEmail = document.getElementById("emailNotEntered");
+        noEmail.style.display = "block";
+
+        var sentEmail = document.getElementById("emailSent");
+        sentEmail.style.display = "none";
+
+        var invalidEmail = document.getElementById("invalidEmail");
+        invalidEmail.style.display = "none";
+    } else if (email != null) {
+        var sentEmail = document.getElementById("emailSent");
+        sentEmail.style.display = "block";
+
+        var noEmail = document.getElementById("emailNotEntered");
+        noEmail.style.display = "none";
+
+        var invalidEmail = document.getElementById("invalidEmail");
+        invalidEmail.style.display = "none";
+    }
+
 }
